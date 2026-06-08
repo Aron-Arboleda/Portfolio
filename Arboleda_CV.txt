@@ -1,0 +1,201 @@
+================================================================================
+                          CURRICULUM VITAE
+================================================================================
+
+PERSONAL INFORMATION
+--------------------------------------------------------------------------------
+Full Name   : Aron Rez D. Arboleda
+Job Role    : Software Developer
+Email       : arboleda.aronrez@gmail.com
+Phone       : +63 929-467-4510
+Address     : 0295 Cutcut 1st, Capas, Tarlac, Philippines
+Languages   : Filipino, English, Kapampangan
+
+
+OBJECTIVE STATEMENT
+--------------------------------------------------------------------------------
+A highly motivated Computer Science graduate from Tarlac State University,
+Philippines. Completed multiple case studies and gained experience in setting up
+desktop and web applications, with both front-end and back-end expertise. Eager
+to contribute to innovative projects and gain practical experience in software
+development or any IT-related field.
+
+
+EDUCATION
+--------------------------------------------------------------------------------
+COLLEGE
+  Institution  : Tarlac State University | Tarlac, Philippines
+  Degree       : Bachelor of Science in Computer Science
+  Graduation   : July 2026
+  Honors       : Magna Cum Laude
+  Coursework   : Object-Oriented Programming, Data Structures and Algorithms,
+                 Desktop App Development, Web Development, Software Engineering
+
+SENIOR HIGH SCHOOL
+  Institution  : Capas National High School | Capas, Tarlac, Philippines
+  Strand       : Science, Technology, Engineering and Mathematics (STEM)
+  Graduated    : May 2022
+  Honors       : With Highest Honor
+
+JUNIOR HIGH SCHOOL
+  Institution  : Capas National High School | Capas, Tarlac, Philippines
+  Specialization: Computer System Servicing
+  Graduated    : May 2020
+  Honors       : With Honors
+
+
+TECHNICAL SKILLS
+--------------------------------------------------------------------------------
+Programming Languages : TypeScript, JavaScript, Python, Java, C++, PHP
+Databases             : MySQL, Firebase, MongoDB
+Frameworks/Libraries  : React, Node.js, TailwindCSS
+Tools                 : Visual Studio Code, Cursor, Git
+
+
+CERTIFICATES
+--------------------------------------------------------------------------------
+- RAITE Hackathon | Regional Competition | Web3            Nov. 2024
+    Certificate of Participation
+
+- Cisco | CCNAv7: Switching, Routing, and Wireless Essentials  June 2024
+    Configured switches and WLAN
+
+- Cisco | CCNAv7: Introduction to Networks                 Jan. 2024
+    Studied OSI model and IPv4/IPv6 addressing
+
+- Sololearn | JavaScript Intermediate                      July 2023
+    Studied JavaScript OOP, Methods, Arrays, DOM, and others
+
+- Sololearn | Python Intermediate                          Oct. 2022
+    Learned Python data types, exception handling, functional programming,
+    and data hiding
+
+
+WORK EXPERIENCE
+--------------------------------------------------------------------------------
+WEB APP DEVELOPER                                          May 2026
+  Type      : Freelance Gig
+  Location  : Tarlac City, Tarlac
+  Deliverable: Liquefact Web App
+  Link      : https://liquefact-web.vercel.app/
+  Details   : Learned how to integrate a neural network model in a
+              Geographical Information System (GIS)
+
+DESKTOP APP DEVELOPER                                      Apr. 2026 – May 2026
+  Type      : Freelance Gig
+  Location  : Tarlac City, Tarlac
+  Deliverable: Draft2Dimen v2 Desktop Application
+  Details   : Modified the application; added local saving, steel formula,
+              and cost computation
+
+DESKTOP APP DEVELOPER                                      Mar. 2025 – May 2025
+  Type      : Freelance Gig
+  Location  : Tarlac City, Tarlac
+  Deliverable: Draft2Dimen Desktop Application
+  Details   : Learned how to work with clients and a UI/UX Designer
+
+
+PROJECTS
+--------------------------------------------------------------------------------
+U-HEAL                                                     Jan. 2026 – Apr. 2026
+  Tech      : React Native, Python, Firebase | Mobile Application
+  Type      : Bachelor's Thesis
+  Description: A mobile eHealth system for remote chronic wound monitoring with
+               tissue classification using the U-Net segmentation model.
+  Features  : Wound Documentation, Video Call, Chat, Virtual Appointment
+              Scheduling, AI-assisted Wound Analysis, Android App with Web
+              App Dashboard, Tracking Charts
+  Web App   : https://u-heal-web.vercel.app/
+  Mobile App: Build Details – @mushmush_aron/U-Heal — Expo
+  Role      : Developer of the whole project
+
+LIQUEFACT                                                  May 2026
+  Tech      : React, TypeScript, TailwindCSS, Python | Web Application
+  Description: A GIS that uses machine learning (neural networks) to estimate
+               borehole information in Tarlac.
+  Link      : https://liquefact-web.vercel.app/
+  Details   : Implemented a neural network using Python with a FastAPI backend.
+  Role      : Developer of the project
+
+DRAFT2DIMEN V2                                             Apr. 2026 – May 2026
+  Tech      : Electron, React, TypeScript | Desktop Application
+  Description: A calculator for computing sizes of structural components
+               (Columns, Beams, Footing, Slab) with rebar and cost computation.
+  Details   : Added local saving, cost computation, and steel formula.
+  Role      : Developer of the project
+
+ARDUINO-BASED GAS AND SMOKE WARNING SYSTEM                 Apr. 2025 – May 2025
+  Tech      : C++, Arduino | Electronics
+  Description: An Arduino-based gas and smoke detector device for a Digital
+               Design course final case study.
+  Link      : https://github.com/Aron-Arboleda/GasAndSmokeDetector
+  Role      : Electronics engineer of the project
+
+DRAFT2DIMEN                                                Mar. 2025 – May 2025
+  Tech      : Electron, React, TypeScript | Desktop Application
+  Description: A calculator for structural component sizes and rebar computations.
+  Details   : Generated PDF files with @react-pdf; implemented structural
+              component calculations and formulas.
+  Role      : Software developer
+
+LIWANAG AT DUNONG WEBSITE                                  Nov. 2024 – Jan. 2025
+  Tech      : PHP, MySQL, React, JavaScript | Web Application
+  Description: A full-stack web application for the NGO "Liwanag at Dunong Project."
+  Link      : https://liwanagatdunongproject.ct.ws/
+  Details   : Handled volunteer applications with forms and an admin dashboard.
+  Role      : Software developer
+
+REBYU: GAMIFIED FLASHCARDS                                 Nov. 2024 – Dec. 2025
+  Tech      : PHP, MySQL, React, JavaScript | Web Application
+  Description: A full-stack web app using pixelated graphics for gamified
+               flashcard learning.
+  Link      : https://rebyu.ct.ws/
+  Details   : Customized UI implementation with a UI/UX Designer.
+  Role      : Software developer
+
+SPELL (Self-Processing English Language Lender)            Apr. 2024 – May 2024
+  Tech      : Java with JavaSwing | Desktop Application
+  Description: An app for manual/automatic text editing with grammar checking
+               and spelling correction.
+  Link      : https://github.com/Aron-Arboleda/SPELL-Self-Processing-English-Language-Lender
+  Details   : Implemented LanguageTool API for spelling/grammar correction;
+              used Launch4j and InnoSetup for compilation.
+  Role      : Main software developer
+
+NOM VETERINARY CLINIC INFORMATION SYSTEM                   May 2023
+  Tech      : Visual Basic, VB.NET | Desktop Application
+  Description: A computing solution managing information for a fictional clinic.
+  Link      : https://github.com/Aron-Arboleda/NomVet
+  Details   : Computer Programming 3 Case Study; learned Visual Basic for
+              desktop application development.
+  Role      : Software developer
+
+REMINDERS BUILDER                                          Apr. 2023 – May 2023
+  Tech      : Java with JavaSwing | Desktop Application
+  Description: A simple app for building and creating text reminders efficiently.
+  Link      : https://github.com/Aron-Arboleda/RemindersBuilder
+  Details   : Computer Programming 1 Case Study; learned basic text file
+              database systems and GUI application development.
+  Role      : Software developer
+
+
+ORGANIZATIONS
+--------------------------------------------------------------------------------
+LIWANAG AT DUNONG                                          Jul. 2024 – Present
+  Location  : Capas, Tarlac, Philippines
+  Roles     : Active Volunteer, Web Developer of the Organization
+
+PROGRAMMERS' DEN                                           Oct. 2022 – Dec. 2022
+  Location  : Tarlac State University | Tarlac City, Tarlac, Philippines
+  Role      : Member of the Organization
+
+
+COMPETITIONS
+--------------------------------------------------------------------------------
+RAITE HACKATHON | Web3 | ICPHubs Regional Competition     Nov. 2024 – Dec. 2024
+  Role      : Member of the hackathon team
+  Award     : Certificate of Participation
+
+================================================================================
+                            END OF CURRICULUM VITAE
+================================================================================
