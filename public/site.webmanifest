@@ -1,0 +1,15 @@
+{
+  "name": "Aron Arboleda",
+  "short_name": "Aron Arboleda",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf9f7",
+  "theme_color": "#c4956a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

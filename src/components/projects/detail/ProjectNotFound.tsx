@@ -1,7 +1,7 @@
 import { NotFoundContent } from '@/components/ui/NotFoundContent'
 import { HeroGrain } from '@/components/ui/HeroGrain'
 import { PageShell } from '@/components/ui/PageShell'
-import { routeSeo } from '@/config/seo'
+import { routeSeo, toPageMeta } from '@/config/seo'
 import { usePageMeta } from '@/hooks/usePageMeta'
 
 type ProjectNotFoundProps = {
@@ -9,7 +9,7 @@ type ProjectNotFoundProps = {
 }
 
 export function ProjectNotFound({ slug }: ProjectNotFoundProps) {
-  usePageMeta(routeSeo.notFound.title, routeSeo.notFound.description)
+  usePageMeta(toPageMeta(routeSeo.notFound))
 
   return (
     <HeroGrain className="flex flex-1 border-b border-border bg-surface-muted">

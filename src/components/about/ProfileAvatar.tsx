@@ -35,6 +35,8 @@ export function ProfileAvatar({ size = 'lg', className }: ProfileAvatarProps) {
     <img
       src={src}
       alt="Aron Arboleda"
+      loading="eager"
+      decoding="async"
       onError={() => setHasError(true)}
       className={cn(
         'shrink-0 rounded-card border border-border object-cover',

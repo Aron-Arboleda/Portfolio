@@ -5,7 +5,7 @@ import { FadeInSection } from '@/components/ui/FadeInSection'
 import { PageShell } from '@/components/ui/PageShell'
 import { Section } from '@/components/ui/Section'
 import { SectionHeading } from '@/components/ui/SectionHeading'
-import { routeSeo } from '@/config/seo'
+import { routeSeo, toPageMeta } from '@/config/seo'
 import {
   filterProjects,
   projectCategories,
@@ -23,7 +23,7 @@ export default function ProjectsPage() {
   const active = parseCategory(searchParams.get('category'))
   const filtered = filterProjects(active)
 
-  usePageMeta(routeSeo.projects.title, routeSeo.projects.description)
+  usePageMeta(toPageMeta(routeSeo.projects))
 
   const handleFilterChange = (id: ProjectFilterId) => {
     if (id === 'all') {

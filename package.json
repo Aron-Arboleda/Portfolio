@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "tsx --tsconfig tsconfig.scripts.json scripts/generate-sitemap.ts",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "verify:images": "tsx --tsconfig tsconfig.scripts.json scripts/verify-images.ts",
+    "verify:images:warn": "tsx --tsconfig tsconfig.scripts.json scripts/verify-images.ts --warn"
   },
   "dependencies": {
     "@fontsource-variable/dm-sans": "^5.2.8",
@@ -34,6 +37,7 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
     "prettier": "^3.8.3",
+    "tsx": "^4.21.0",
     "tailwindcss": "^4.3.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",

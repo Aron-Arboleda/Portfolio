@@ -9,7 +9,7 @@ import { ProjectResults } from '@/components/projects/detail/ProjectResults'
 import { ProjectTechSection } from '@/components/projects/detail/ProjectTechSection'
 import { FadeInSection } from '@/components/ui/FadeInSection'
 import { PageShell } from '@/components/ui/PageShell'
-import { projectPageTitle } from '@/config/seo'
+import { projectPageMeta } from '@/config/seo'
 import { usePageMeta } from '@/hooks/usePageMeta'
 import type { Project } from '@/types/project'
 
@@ -18,7 +18,7 @@ type ProjectDetailLayoutProps = {
 }
 
 export function ProjectDetailLayout({ project }: ProjectDetailLayoutProps) {
-  usePageMeta(projectPageTitle(project.title), project.tagline)
+  usePageMeta(projectPageMeta(project))
 
   return (
     <PageShell className="py-16 sm:py-24">

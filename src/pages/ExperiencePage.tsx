@@ -3,12 +3,12 @@ import { FadeInSection } from '@/components/ui/FadeInSection'
 import { PageShell } from '@/components/ui/PageShell'
 import { Section } from '@/components/ui/Section'
 import { SectionHeading } from '@/components/ui/SectionHeading'
-import { routeSeo } from '@/config/seo'
+import { routeSeo, toPageMeta } from '@/config/seo'
 import { experience } from '@/data/experience'
 import { usePageMeta } from '@/hooks/usePageMeta'
 
 export default function ExperiencePage() {
-  usePageMeta(routeSeo.experience.title, routeSeo.experience.description)
+  usePageMeta(toPageMeta(routeSeo.experience))
 
   return (
     <PageShell className="py-16 sm:py-24">

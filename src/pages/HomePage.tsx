@@ -8,7 +8,7 @@ import { HeroGrain } from '@/components/ui/HeroGrain'
 import { PageShell } from '@/components/ui/PageShell'
 import { Section } from '@/components/ui/Section'
 import { SectionHeading } from '@/components/ui/SectionHeading'
-import { routeSeo } from '@/config/seo'
+import { routeSeo, toPageMeta } from '@/config/seo'
 import { profile } from '@/data/profile'
 import { getFeaturedProjects } from '@/data/projects'
 import { skills } from '@/data/skills'
@@ -35,7 +35,7 @@ const buildAreas = [
 export default function HomePage() {
   const featuredProjects = getFeaturedProjects()
 
-  usePageMeta(routeSeo.home.title, routeSeo.home.description)
+  usePageMeta(toPageMeta(routeSeo.home))
 
   return (
     <>

@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/Badge'
 import { FadeInSection } from '@/components/ui/FadeInSection'
 import { PageShell } from '@/components/ui/PageShell'
 import { Section } from '@/components/ui/Section'
-import { routeSeo } from '@/config/seo'
+import { routeSeo, toPageMeta } from '@/config/seo'
 import { certificates } from '@/data/certificates'
 import { education } from '@/data/education'
 import { organizations } from '@/data/organizations'
@@ -18,7 +18,7 @@ const seniorHigh = education.find((item) => item.level === 'senior-high')
 const juniorHigh = education.find((item) => item.level === 'junior-high')
 
 export default function AboutPage() {
-  usePageMeta(routeSeo.about.title, routeSeo.about.description)
+  usePageMeta(toPageMeta(routeSeo.about))
 
   return (
     <PageShell className="py-16 sm:py-24">

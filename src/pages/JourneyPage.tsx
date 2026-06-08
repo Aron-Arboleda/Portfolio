@@ -3,12 +3,12 @@ import { FadeInSection } from '@/components/ui/FadeInSection'
 import { PageShell } from '@/components/ui/PageShell'
 import { Section } from '@/components/ui/Section'
 import { SectionHeading } from '@/components/ui/SectionHeading'
-import { routeSeo } from '@/config/seo'
+import { routeSeo, toPageMeta } from '@/config/seo'
 import { journey } from '@/data/journey'
 import { usePageMeta } from '@/hooks/usePageMeta'
 
 export default function JourneyPage() {
-  usePageMeta(routeSeo.journey.title, routeSeo.journey.description)
+  usePageMeta(toPageMeta(routeSeo.journey))
 
   return (
     <PageShell className="py-16 sm:py-24">

@@ -1,0 +1,97 @@
+# Image assets
+
+Drop WebP files here using the paths below. No code changes are needed when you add files.
+
+## Specs
+
+| Asset type | Format | Size notes |
+| ---------- | ------ | ---------- |
+| Project screenshots | WebP | Max width 1920px, compressed |
+| Profile photo | WebP | 800×800 recommended |
+| OG default | WebP | 1200×630 for social sharing |
+
+Run `npm run verify:images` to list missing files. Use `npm run verify:images:warn` to log without failing.
+
+## Global
+
+| File | Path |
+| ---- | ---- |
+| OG default | `og-default.webp` |
+| Profile portrait | `profile/aron-portrait.webp` |
+
+## Per-project files
+
+Each project needs `hero.webp` plus the gallery files listed.
+
+### u-heal
+
+- `projects/u-heal/hero.webp`
+- `projects/u-heal/mobile-1.webp`
+- `projects/u-heal/mobile-2.webp`
+- `projects/u-heal/dashboard.webp`
+- `projects/u-heal/ai-analysis.webp`
+
+### liquefact
+
+- `projects/liquefact/hero.webp`
+- `projects/liquefact/map.webp`
+- `projects/liquefact/prediction.webp`
+- `projects/liquefact/ui-detail.webp`
+
+### draft2dimen-v2
+
+- `projects/draft2dimen-v2/hero.webp`
+- `projects/draft2dimen-v2/calculator.webp`
+- `projects/draft2dimen-v2/cost-report.webp`
+- `projects/draft2dimen-v2/local-save.webp`
+
+### gas-smoke-detector
+
+- `projects/gas-smoke-detector/hero.webp`
+- `projects/gas-smoke-detector/device.webp`
+- `projects/gas-smoke-detector/wiring.webp`
+- `projects/gas-smoke-detector/demo.webp`
+
+### draft2dimen
+
+- `projects/draft2dimen/hero.webp`
+- `projects/draft2dimen/pdf-export.webp`
+- `projects/draft2dimen/component-calc.webp`
+
+### liwanag-at-dunong
+
+- `projects/liwanag-at-dunong/hero.webp`
+- `projects/liwanag-at-dunong/landing.webp`
+- `projects/liwanag-at-dunong/volunteer-form.webp`
+- `projects/liwanag-at-dunong/admin-dashboard.webp`
+
+### rebyu
+
+- `projects/rebyu/hero.webp`
+- `projects/rebyu/gameplay.webp`
+- `projects/rebyu/flashcards.webp`
+- `projects/rebyu/pixel-ui.webp`
+
+### spell
+
+- `projects/spell/hero.webp`
+- `projects/spell/editor.webp`
+- `projects/spell/grammar-check.webp`
+
+### nom-vet
+
+- `projects/nom-vet/hero.webp`
+- `projects/nom-vet/dashboard.webp`
+- `projects/nom-vet/records.webp`
+
+### reminders-builder
+
+- `projects/reminders-builder/hero.webp`
+- `projects/reminders-builder/reminder-list.webp`
+- `projects/reminders-builder/create-reminder.webp`
+
+### raite-hackathon (optional)
+
+- `projects/raite-hackathon/hero.webp`
+- `projects/raite-hackathon/team.webp`
+- `projects/raite-hackathon/demo.webp`
