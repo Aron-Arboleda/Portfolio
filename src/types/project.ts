@@ -18,6 +18,11 @@ export type ProjectLinks = {
   mobile?: string
 }
 
+export type TechStackItem = {
+  name: string
+  note?: string
+}
+
 export type Project = {
   slug: string
   title: string
@@ -25,6 +30,7 @@ export type Project = {
   description: string
   categories: ProjectCategory[]
   techStack: string[]
+  techStackDetails?: TechStackItem[]
   features: string[]
   role: string
   dateRange: DateRange

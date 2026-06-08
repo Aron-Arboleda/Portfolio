@@ -1,47 +1,49 @@
-import { Link } from 'react-router-dom'
-import { Badge } from '@/components/ui/Badge'
+import { useSearchParams } from 'react-router-dom'
+import { ProjectFilter } from '@/components/projects/ProjectFilter'
+import { ProjectGrid } from '@/components/projects/ProjectGrid'
 import { PageShell } from '@/components/ui/PageShell'
 import { Section } from '@/components/ui/Section'
 import { SectionHeading } from '@/components/ui/SectionHeading'
-import { getAllProjects } from '@/data/projects'
+import {
+  filterProjects,
+  projectCategories,
+  type ProjectFilterId,
+} from '@/data/projects'
+
+function parseCategory(value: string | null): ProjectFilterId {
+  const valid = projectCategories.some((category) => category.id === value)
+  return valid ? (value as ProjectFilterId) : 'all'
+}
 
 export default function ProjectsPage() {
-  const allProjects = getAllProjects()
+  const [searchParams, setSearchParams] = useSearchParams()
+  const active = parseCategory(searchParams.get('category'))
+  const filtered = filterProjects(active)
+
+  const handleFilterChange = (id: ProjectFilterId) => {
+    if (id === 'all') {
+      setSearchParams({})
+    } else {
+      setSearchParams({ category: id })
+    }
+  }
 
   return (
     <PageShell className="py-16 sm:py-24">
       <Section className="py-0 md:py-0">
         <SectionHeading
           title="Projects"
-          subtitle="All projects from my portfolio. Full grid and filters coming in Phase 4."
+          subtitle="A collection of web, mobile, desktop, and hardware work — from case studies to client deliverables."
           titleAs="h1"
         />
 
-        <ul className="m-0 mt-10 flex list-none flex-col gap-4 p-0">
-          {allProjects.map((project) => (
-            <li key={project.slug}>
-              <Link
-                to={`/projects/${project.slug}`}
-                className="group flex flex-col gap-2 rounded-card border border-border bg-surface-elevated p-5 no-underline transition-colors hover:border-accent sm:flex-row sm:items-center sm:justify-between"
-              >
-                <div>
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="font-heading text-lg text-primary group-hover:text-accent">
-                      {project.title}
-                    </span>
-                    {project.featured && <Badge>Featured</Badge>}
-                  </div>
-                  <p className="m-0 mt-1 text-sm text-muted">
-                    {project.dateRange.display}
-                  </p>
-                </div>
-                <p className="m-0 max-w-md text-sm text-muted sm:text-right">
-                  {project.tagline}
-                </p>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="mt-10">
+          <ProjectFilter active={active} onChange={handleFilterChange} />
+        </div>
+
+        <div className="mt-8">
+          <ProjectGrid projects={filtered} />
+        </div>
       </Section>
     </PageShell>
   )

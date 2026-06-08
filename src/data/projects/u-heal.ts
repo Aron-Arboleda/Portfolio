@@ -16,6 +16,24 @@ export const uHeal: Project = {
   description,
   categories: ['mobile', 'web'],
   techStack: ['React Native', 'Python', 'Firebase', 'Expo'],
+  techStackDetails: [
+    {
+      name: 'React Native',
+      note: 'Cross-platform mobile app for patients and caregivers with native device access.',
+    },
+    {
+      name: 'Python',
+      note: 'U-Net segmentation model for AI-assisted wound tissue classification.',
+    },
+    {
+      name: 'Firebase',
+      note: 'Authentication, real-time chat, and cloud storage for wound documentation.',
+    },
+    {
+      name: 'Expo',
+      note: 'Streamlined builds and distribution for the Android thesis deliverable.',
+    },
+  ],
   features: [
     'Wound Documentation',
     'Video Call',

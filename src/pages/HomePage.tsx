@@ -1,3 +1,5 @@
+import { ProjectGrid } from '@/components/projects/ProjectGrid'
+import { SkillGrid } from '@/components/skills/SkillGrid'
 import { Badge } from '@/components/ui/Badge'
 import { ButtonLink } from '@/components/ui/ButtonLink'
 import { Card } from '@/components/ui/Card'
@@ -6,6 +8,8 @@ import { PageShell } from '@/components/ui/PageShell'
 import { Section } from '@/components/ui/Section'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { profile } from '@/data/profile'
+import { getFeaturedProjects } from '@/data/projects'
+import { skills } from '@/data/skills'
 
 const buildAreas = [
   {
@@ -26,6 +30,8 @@ const buildAreas = [
 ] as const
 
 export default function HomePage() {
+  const featuredProjects = getFeaturedProjects()
+
   return (
     <>
       <HeroGrain className="border-b border-border bg-surface-muted">
@@ -61,6 +67,18 @@ export default function HomePage() {
 
       <PageShell>
         <Section
+          title="Featured work"
+          subtitle="Highlights from my thesis, freelance, and NGO projects."
+        >
+          <ProjectGrid projects={featuredProjects} />
+          <div className="mt-8">
+            <ButtonLink to="/projects" variant="secondary">
+              View all projects
+            </ButtonLink>
+          </div>
+        </Section>
+
+        <Section
           title="What I build"
           subtitle="Software across platforms — from thesis research to client deliverables."
         >
@@ -76,6 +94,30 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
+        </Section>
+
+        <Section
+          title="Tech stack"
+          subtitle="Languages, frameworks, and tools I work with."
+        >
+          <SkillGrid skills={skills} />
+        </Section>
+
+        <Section>
+          <Card className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <div>
+              <h2 className="m-0 font-heading text-2xl text-primary">
+                My journey
+              </h2>
+              <p className="m-0 mt-3 max-w-xl text-muted">
+                From computer servicing in high school to building ML-powered
+                apps — see the full path I took to become a software developer.
+              </p>
+            </div>
+            <ButtonLink to="/journey" variant="primary" className="shrink-0">
+              Explore my journey
+            </ButtonLink>
+          </Card>
         </Section>
       </PageShell>
     </>

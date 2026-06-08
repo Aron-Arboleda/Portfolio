@@ -10,5 +10,6 @@ export type {
   Project,
   ProjectCategory,
   ProjectLinks,
+  TechStackItem,
 } from '@/types/project'
 export type { SkillGroup, Skills } from '@/types/skills'
