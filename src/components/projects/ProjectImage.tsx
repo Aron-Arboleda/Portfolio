@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ProjectImagePlaceholder } from '@/components/projects/ProjectImagePlaceholder'
+import { Skeleton } from '@/components/ui/Skeleton'
 import { cn } from '@/lib/cn'
 
 type ProjectImageProps = {
@@ -8,6 +9,7 @@ type ProjectImageProps = {
   title: string
   slug?: string
   aspectRatio?: 'video' | 'square'
+  loading?: 'eager' | 'lazy'
   className?: string
 }
 
@@ -17,11 +19,14 @@ export function ProjectImage({
   title,
   slug,
   aspectRatio = 'video',
+  loading = 'lazy',
   className,
 }: ProjectImageProps) {
-  const [hasError, setHasError] = useState(false)
+  const [status, setStatus] = useState<'loading' | 'loaded' | 'error'>('loading')
 
-  if (hasError) {
+  const aspectClass = aspectRatio === 'video' ? 'aspect-video' : 'aspect-square'
+
+  if (status === 'error') {
     return (
       <ProjectImagePlaceholder
         title={title}
@@ -33,15 +38,23 @@ export function ProjectImage({
   }
 
   return (
-    <img
-      src={src}
-      alt={alt}
-      onError={() => setHasError(true)}
-      className={cn(
-        'w-full rounded-card border border-border object-cover',
-        aspectRatio === 'video' ? 'aspect-video' : 'aspect-square',
-        className,
+    <div className={cn('relative', aspectClass, className)}>
+      {status === 'loading' && (
+        <Skeleton className={cn('absolute inset-0 h-full w-full', aspectClass)} />
       )}
-    />
+      <img
+        src={src}
+        alt={alt}
+        loading={loading}
+        decoding="async"
+        onLoad={() => setStatus('loaded')}
+        onError={() => setStatus('error')}
+        className={cn(
+          'h-full w-full rounded-card border border-border object-cover transition-opacity duration-300',
+          aspectClass,
+          status === 'loaded' ? 'opacity-100' : 'opacity-0',
+        )}
+      />
+    </div>
   )
 }

@@ -24,7 +24,7 @@ export function ProjectNavigation({ slug }: ProjectNavigationProps) {
               <span className="text-xs uppercase tracking-widest text-muted">
                 Previous
               </span>
-              <span className="mt-1 block font-heading text-primary transition-colors group-hover:text-accent">
+              <span className="mt-1 line-clamp-2 block font-heading text-primary transition-colors group-hover:text-accent">
                 &larr; {prev.title}
               </span>
             </Link>
@@ -47,7 +47,7 @@ export function ProjectNavigation({ slug }: ProjectNavigationProps) {
               <span className="text-xs uppercase tracking-widest text-muted">
                 Next
               </span>
-              <span className="mt-1 block font-heading text-primary transition-colors group-hover:text-accent">
+              <span className="mt-1 line-clamp-2 block font-heading text-primary transition-colors group-hover:text-accent">
                 {next.title} &rarr;
               </span>
             </Link>

@@ -78,6 +78,7 @@ export function ProjectDetailHero({ project }: ProjectDetailHeroProps) {
           alt={project.title}
           title={project.title}
           slug={project.slug}
+          loading="eager"
           className="max-h-[480px]"
         />
       </div>

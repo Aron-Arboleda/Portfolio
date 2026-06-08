@@ -11,7 +11,7 @@ export function Card({ hover = false, className, children, ...props }: CardProps
       className={cn(
         'rounded-card border border-border bg-surface-elevated p-6',
         hover &&
-          'transition-[box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-soft)]',
+          'motion-safe:transition-[box-shadow,transform] motion-safe:duration-300 motion-safe:hover:-translate-y-0.5 hover:shadow-[var(--shadow-soft)]',
         className,
       )}
       {...props}

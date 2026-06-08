@@ -24,7 +24,8 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
             alt={project.title}
             title={project.title}
             slug={project.slug}
-            className="rounded-none border-0 transition-transform duration-300 group-hover:scale-[1.02]"
+            loading="lazy"
+            className="rounded-none border-0 motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-[1.02]"
           />
         </div>
         <div className="p-5">

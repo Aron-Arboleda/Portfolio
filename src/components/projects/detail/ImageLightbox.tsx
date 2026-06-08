@@ -58,7 +58,7 @@ export function ImageLightbox({
         <button
           type="button"
           onClick={onClose}
-          className="absolute -top-12 right-0 inline-flex h-10 w-10 items-center justify-center rounded-button border border-border bg-surface-elevated text-primary hover:text-accent"
+          className="absolute -top-12 right-0 inline-flex h-11 w-11 items-center justify-center rounded-button border border-border bg-surface-elevated text-primary hover:text-accent"
           aria-label="Close gallery"
         >
           <X size={20} aria-hidden="true" />
@@ -68,7 +68,7 @@ export function ImageLightbox({
           <button
             type="button"
             onClick={onPrev}
-            className="absolute left-0 top-1/2 z-10 -translate-x-full -translate-y-1/2 p-2 text-inverse hover:text-accent max-sm:-translate-x-0 max-sm:left-2 max-sm:rounded-button max-sm:bg-surface-elevated max-sm:text-primary"
+            className="absolute left-0 top-1/2 z-10 flex h-11 w-11 -translate-x-full -translate-y-1/2 items-center justify-center text-inverse hover:text-accent max-sm:-translate-x-0 max-sm:left-2 max-sm:rounded-button max-sm:bg-surface-elevated max-sm:text-primary"
             aria-label="Previous image"
           >
             <ChevronLeft size={28} aria-hidden="true" />
@@ -79,7 +79,7 @@ export function ImageLightbox({
           <button
             type="button"
             onClick={onNext}
-            className="absolute right-0 top-1/2 z-10 translate-x-full -translate-y-1/2 p-2 text-inverse hover:text-accent max-sm:translate-x-0 max-sm:right-2 max-sm:rounded-button max-sm:bg-surface-elevated max-sm:text-primary"
+            className="absolute right-0 top-1/2 z-10 flex h-11 w-11 translate-x-full -translate-y-1/2 items-center justify-center text-inverse hover:text-accent max-sm:translate-x-0 max-sm:right-2 max-sm:rounded-button max-sm:bg-surface-elevated max-sm:text-primary"
             aria-label="Next image"
           >
             <ChevronRight size={28} aria-hidden="true" />

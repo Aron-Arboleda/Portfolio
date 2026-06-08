@@ -69,6 +69,11 @@ html {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+
+  .motion-safe\:transition-transform,
+  .motion-safe\:transition-\[box-shadow\,transform\] {
+    transition: none !important;
+  }
 }
 
 body {

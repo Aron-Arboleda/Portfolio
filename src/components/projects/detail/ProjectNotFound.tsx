@@ -1,26 +1,23 @@
-import { ButtonLink } from '@/components/ui/ButtonLink'
+import { NotFoundContent } from '@/components/ui/NotFoundContent'
+import { HeroGrain } from '@/components/ui/HeroGrain'
 import { PageShell } from '@/components/ui/PageShell'
-import { Section } from '@/components/ui/Section'
-import { SectionHeading } from '@/components/ui/SectionHeading'
+import { routeSeo } from '@/config/seo'
+import { usePageMeta } from '@/hooks/usePageMeta'
 
 type ProjectNotFoundProps = {
   slug?: string
 }
 
 export function ProjectNotFound({ slug }: ProjectNotFoundProps) {
+  usePageMeta(routeSeo.notFound.title, routeSeo.notFound.description)
+
   return (
-    <PageShell className="flex flex-1 flex-col justify-center py-16 sm:py-24">
-      <Section className="py-0 md:py-0">
-        <SectionHeading
-          eyebrow="404"
-          title="Project not found"
-          titleAs="h1"
+    <HeroGrain className="flex flex-1 border-b border-border bg-surface-muted">
+      <PageShell className="flex flex-1 flex-col justify-center py-16 sm:py-24">
+        <NotFoundContent
           subtitle={`No project exists with slug "${slug ?? 'unknown'}".`}
         />
-        <ButtonLink to="/projects" variant="primary" className="mt-8">
-          Back to Projects
-        </ButtonLink>
-      </Section>
-    </PageShell>
+      </PageShell>
+    </HeroGrain>
   )
 }
