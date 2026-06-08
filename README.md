@@ -23,13 +23,26 @@ Open [http://localhost:5173](http://localhost:5173).
 
 ## Environment variables
 
-Copy `.env.example` to `.env` if needed. The only variable is optional:
+Copy `.env.example` to `.env` if needed:
 
-- **`VITE_SITE_URL`** — Canonical site URL for sitemap generation. On Vercel, the build auto-detects `VERCEL_PROJECT_PRODUCTION_URL`; you usually do not need to set this.
+| Variable | Required | Description |
+| -------- | -------- | ----------- |
+| `VITE_SITE_URL` | No | Canonical URL for sitemap. Auto-detected on Vercel. |
+| `VITE_WEB3FORMS_ACCESS_KEY` | For contact form | Web3Forms access key from [web3forms.com](https://web3forms.com). Without it, `/contact` falls back to mailto locally. |
+
+Set both in Vercel → Project → Settings → Environment Variables for production.
+
+## Content editing
+
+See [CONTENT.md](CONTENT.md) for how to fill project narratives, reflections, and profile details.
 
 ## Image assets
 
 Project screenshots and profile photo go in `public/images/`. See [public/images/README.md](public/images/README.md) for the full checklist and file naming.
+
+## Analytics
+
+[Vercel Web Analytics](https://vercel.com/docs/analytics) is included via `@vercel/analytics`. Enable **Web Analytics** in your Vercel project settings if pageviews do not appear.
 
 ## Deploy to Vercel
 
@@ -59,4 +72,6 @@ Smoke-test the live `*.vercel.app` URL:
 - Tailwind CSS v4
 - React Router v7
 - Framer Motion
+- Vercel Analytics
+- Web3Forms (contact)
 - Deployed on Vercel

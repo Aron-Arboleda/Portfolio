@@ -2,6 +2,7 @@ import { CertificateList } from '@/components/about/CertificateList'
 import { EducationCard } from '@/components/about/EducationCard'
 import { OrganizationCard } from '@/components/about/OrganizationCard'
 import { ProfileAvatar } from '@/components/about/ProfileAvatar'
+import { ResumeDownload } from '@/components/about/ResumeDownload'
 import { Badge } from '@/components/ui/Badge'
 import { FadeInSection } from '@/components/ui/FadeInSection'
 import { PageShell } from '@/components/ui/PageShell'
@@ -37,6 +38,9 @@ export default function AboutPage() {
                 {profile.highlights.map((highlight) => (
                   <Badge key={highlight}>{highlight}</Badge>
                 ))}
+              </div>
+              <div className="mt-6">
+                <ResumeDownload />
               </div>
               <p className="m-0 mt-6 text-sm text-muted">
                 <span className="font-medium text-primary">Languages:</span>{' '}

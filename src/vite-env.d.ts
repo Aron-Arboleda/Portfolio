@@ -2,3 +2,12 @@
 
 declare module '@fontsource-variable/dm-sans'
 declare module '@fontsource/instrument-serif/400.css'
+
+interface ImportMetaEnv {
+  readonly VITE_SITE_URL?: string
+  readonly VITE_WEB3FORMS_ACCESS_KEY?: string
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv
+}

@@ -1,3 +1,4 @@
+import { ResumeDownload } from '@/components/about/ResumeDownload'
 import { ProjectGrid } from '@/components/projects/ProjectGrid'
 import { SkillGrid } from '@/components/skills/SkillGrid'
 import { Badge } from '@/components/ui/Badge'
@@ -65,6 +66,7 @@ export default function HomePage() {
               <ButtonLink to="/journey" variant="secondary">
                 My Journey
               </ButtonLink>
+              <ResumeDownload />
             </div>
           </Section>
         </PageShell>

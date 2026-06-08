@@ -1,3 +1,4 @@
+import { SocialLinks } from '@/components/ui/SocialLinks'
 import { profile } from '@/data/profile'
 
 export function ContactInfo() {
@@ -47,24 +48,7 @@ export function ContactInfo() {
         <p className="m-0 text-sm font-medium uppercase tracking-widest text-accent">
           Connect
         </p>
-        <ul className="m-0 mt-2 flex list-none flex-col gap-2 p-0">
-          {profile.socials.map((social) => (
-            <li key={social.href}>
-              <a
-                href={social.href}
-                target={social.type === 'email' ? undefined : '_blank'}
-                rel={
-                  social.type === 'email'
-                    ? undefined
-                    : 'noopener noreferrer'
-                }
-                className="text-primary no-underline hover:text-accent"
-              >
-                {social.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <SocialLinks className="mt-2" linkClassName="text-primary" />
       </div>
     </div>
   )

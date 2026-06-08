@@ -16,4 +16,5 @@ export type Profile = {
   tagline: string
   socials: SocialLink[]
   highlights: string[]
+  resumeUrl?: string
 }

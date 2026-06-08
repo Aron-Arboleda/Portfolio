@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
 import { Footer } from '@/components/layout/Footer'
@@ -22,6 +23,7 @@ export function RootLayout() {
         </Suspense>
       </main>
       <Footer />
+      <Analytics />
     </div>
   )
 }

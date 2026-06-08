@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { SocialLinks } from '@/components/ui/SocialLinks'
 import { navLinks } from '@/config/navigation'
 import { profile } from '@/data/profile'
 
@@ -41,24 +42,11 @@ export function Footer() {
             <p className="m-0 text-sm font-medium uppercase tracking-widest text-accent">
               Connect
             </p>
-            <ul className="m-0 mt-4 flex list-none flex-col gap-2 p-0">
-              {profile.socials.map((social) => (
-                <li key={social.href}>
-                  <a
-                    href={social.href}
-                    target={social.type === 'email' ? undefined : '_blank'}
-                    rel={
-                      social.type === 'email'
-                        ? undefined
-                        : 'noopener noreferrer'
-                    }
-                    className="text-sm text-muted no-underline transition-colors hover:text-primary"
-                  >
-                    {social.label === 'Email' ? profile.email : social.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <SocialLinks
+              className="mt-4"
+              linkClassName="text-sm text-muted hover:text-primary"
+              showEmailAddress
+            />
           </div>
         </div>
 

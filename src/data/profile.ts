@@ -23,6 +23,12 @@ export const profile: Profile = {
       href: 'https://github.com/Aron-Arboleda',
       type: 'github',
     },
+    {
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/aron-arboleda',
+      type: 'linkedin',
+    },
   ],
   highlights: ['Magna Cum Laude', 'Full-Stack Developer'],
+  resumeUrl: '/Aron_Arboleda_Resume.pdf',
 }
