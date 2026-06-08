@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { MobileNav } from '@/components/layout/MobileNav'
 import { ThemeToggle } from '@/components/layout/ThemeToggle'
 import { navLinks } from '@/config/navigation'
-import { site } from '@/config/site'
+import { profile } from '@/data/profile'
 import { navLinkClass } from '@/lib/nav-link-variants'
 import { cn } from '@/lib/cn'
 
@@ -40,7 +40,9 @@ export function Header() {
             >
               AR
             </span>
-            <span className="font-heading text-lg text-primary">{site.siteName}</span>
+            <span className="font-heading text-lg text-primary">
+              {profile.siteName}
+            </span>
           </NavLink>
 
           <div className="flex items-center gap-2">

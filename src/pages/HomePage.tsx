@@ -5,7 +5,7 @@ import { HeroGrain } from '@/components/ui/HeroGrain'
 import { PageShell } from '@/components/ui/PageShell'
 import { Section } from '@/components/ui/Section'
 import { SectionHeading } from '@/components/ui/SectionHeading'
-import { site } from '@/config/site'
+import { profile } from '@/data/profile'
 
 const buildAreas = [
   {
@@ -33,16 +33,19 @@ export default function HomePage() {
           <Section className="py-0 md:py-0">
             <SectionHeading
               eyebrow="Portfolio"
-              title={site.fullName}
+              title={profile.fullName}
               titleAs="h1"
             />
-            <p className="m-0 mt-2 text-xl text-muted sm:text-2xl">{site.role}</p>
+            <p className="m-0 mt-2 text-xl text-muted sm:text-2xl">
+              {profile.role}
+            </p>
             <p className="m-0 mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-              {site.tagline}
+              {profile.tagline}
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
-              <Badge>Magna Cum Laude</Badge>
-              <Badge>Full-Stack Developer</Badge>
+              {profile.highlights.map((highlight) => (
+                <Badge key={highlight}>{highlight}</Badge>
+              ))}
             </div>
             <div className="mt-10 flex flex-wrap gap-4">
               <ButtonLink to="/projects" variant="primary">
