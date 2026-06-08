@@ -6,10 +6,20 @@ import { getAllProjectSlugs } from '../src/data/projects/index.ts'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const publicDir = join(__dirname, '..', 'public')
 
-const siteUrl = (process.env.VITE_SITE_URL ?? 'http://localhost:4173').replace(
-  /\/$/,
-  '',
-)
+function getBuildSiteUrl(): string {
+  const explicit = process.env.VITE_SITE_URL?.replace(/\/$/, '')
+  if (explicit) return explicit
+
+  const production = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  if (production) return `https://${production}`
+
+  const preview = process.env.VERCEL_URL
+  if (preview) return `https://${preview}`
+
+  return 'http://localhost:4173'
+}
+
+const siteUrl = getBuildSiteUrl()
 
 const lastmod = new Date().toISOString().split('T')[0]
 

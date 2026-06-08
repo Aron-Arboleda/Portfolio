@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# Aron Arboleda — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site for Aron Rez D. Arboleda: projects, journey timeline, experience, and contact. Built with React, TypeScript, Tailwind CSS v4, and Vite.
 
-Currently, two official plugins are available:
+## Local development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open [http://localhost:5173](http://localhost:5173).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Other commands
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Command | Description |
+| ------- | ----------- |
+| `npm run build` | Type-check, generate sitemap/robots, production build |
+| `npm run preview` | Serve the production build locally |
+| `npm run lint` | Run ESLint |
+| `npm run verify:images` | List missing image assets (fails if any missing) |
+| `npm run verify:images:warn` | List missing images without failing |
+
+## Environment variables
+
+Copy `.env.example` to `.env` if needed. The only variable is optional:
+
+- **`VITE_SITE_URL`** — Canonical site URL for sitemap generation. On Vercel, the build auto-detects `VERCEL_PROJECT_PRODUCTION_URL`; you usually do not need to set this.
+
+## Image assets
+
+Project screenshots and profile photo go in `public/images/`. See [public/images/README.md](public/images/README.md) for the full checklist and file naming.
+
+## Deploy to Vercel
+
+1. Push this repo to GitHub.
+2. In [Vercel](https://vercel.com), **Add New Project** and import the repository.
+3. Framework preset: **Vite** (auto-detected).
+4. Confirm build settings:
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+5. Deploy. Pushes to `main` trigger production deployments automatically.
+
+SPA routing is handled by [`vercel.json`](vercel.json). The `prebuild` step generates `sitemap.xml` and `robots.txt` with your production URL.
+
+### After first deploy
+
+Smoke-test the live `*.vercel.app` URL:
+
+- All routes: `/`, `/about`, `/journey`, `/projects`, `/experience`, `/contact`
+- All 11 project pages under `/projects/:slug`
+- `/robots.txt` and `/sitemap.xml` use your production domain
+- Deep links (e.g. `/projects/u-heal`) load directly without 404
+
+## Tech stack
+
+- React 19 + TypeScript
+- Vite 8
+- Tailwind CSS v4
+- React Router v7
+- Framer Motion
+- Deployed on Vercel
