@@ -6,4 +6,6 @@ export type Organization = {
   location: string
   dateRange: DateRange
   roles: string[]
+  /** External site — card opens in a new tab when set. */
+  url?: string
 }

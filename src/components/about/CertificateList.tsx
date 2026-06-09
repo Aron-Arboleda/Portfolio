@@ -1,3 +1,6 @@
+import { useState } from 'react'
+import { CertificateCard } from '@/components/about/CertificateCard'
+import { CertificateLightbox } from '@/components/about/CertificateLightbox'
 import type { Certificate } from '@/types/certificate'
 
 type CertificateListProps = {
@@ -5,31 +8,34 @@ type CertificateListProps = {
 }
 
 export function CertificateList({ certificates }: CertificateListProps) {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
+
   return (
-    <ul className="m-0 flex list-none flex-col gap-4 p-0">
-      {certificates.map((certificate) => (
-        <li
-          key={certificate.id}
-          className="rounded-card border border-border bg-surface-elevated p-5"
-        >
-          <div className="flex flex-wrap items-start justify-between gap-2">
-            <div>
-              <p className="m-0 text-sm font-medium text-accent">
-                {certificate.issuer}
-              </p>
-              <p className="m-0 mt-1 font-heading text-lg text-primary">
-                {certificate.title}
-              </p>
-            </div>
-            <span className="shrink-0 text-sm text-muted">{certificate.date}</span>
-          </div>
-          {certificate.description && (
-            <p className="m-0 mt-2 text-sm text-muted">
-              {certificate.description}
-            </p>
-          )}
-        </li>
-      ))}
-    </ul>
+    <>
+      <ul className="m-0 flex list-none flex-col gap-4 p-0">
+        {certificates.map((certificate, index) => (
+          <li key={certificate.id}>
+            <CertificateCard
+              certificate={certificate}
+              onView={() => setActiveIndex(index)}
+            />
+          </li>
+        ))}
+      </ul>
+
+      {activeIndex !== null && (
+        <CertificateLightbox
+          certificates={certificates}
+          activeIndex={activeIndex}
+          onClose={() => setActiveIndex(null)}
+          onPrev={() => setActiveIndex((index) => Math.max(0, (index ?? 0) - 1))}
+          onNext={() =>
+            setActiveIndex((index) =>
+              Math.min(certificates.length - 1, (index ?? 0) + 1),
+            )
+          }
+        />
+      )}
+    </>
   )
 }
