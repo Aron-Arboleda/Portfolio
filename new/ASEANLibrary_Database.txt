@@ -1,0 +1,80 @@
+================================================================================
+                        ASEAN Library Database - Project Overview
+================================================================================
+URL: (no repo / url)
+
+--------------------------------------------------------------------------------
+GENERAL INFO
+--------------------------------------------------------------------------------
+Repository Name   : N/A
+Owner / Developer : Aron-Arboleda (https://github.com/Aron-Arboleda)
+Visibility        : N/A
+Project Started   : November 2024
+License           : N/A
+Repository ID     : N/A
+Branch            : N/A
+Total Commits     : N/A
+
+--------------------------------------------------------------------------------
+DESCRIPTION
+--------------------------------------------------------------------------------
+It is a database made with the MS Access technology and served as our case study
+for CC6 (Information Management). This is includes implementation of a RDBMS with
+the application of entity relationships, constructiong ERDs, data lifecycle 
+management, and how to make a functional database system using MS Access
+
+One-liner (from GitHub):
+  "A Microsoft Access database for the ASEAN Library data, it contains books,
+  reading materials, pictures, and paintings that helps conserve the culture of
+  ASEAN countries"
+
+--------------------------------------------------------------------------------
+FEATURES
+--------------------------------------------------------------------------------
+- Data storage for different kindly of ASEAN literatures.
+- User interfaces to navigate and manage all the data.
+- Robust and error-free inputting using MS Access code blocks.
+- Filtering, sorting, all present in the system.
+
+--------------------------------------------------------------------------------
+TECH STACK
+--------------------------------------------------------------------------------
+- Database : Microsoft Access
+
+--------------------------------------------------------------------------------
+REPOSITORY STATS
+--------------------------------------------------------------------------------
+Stars    : N/A
+Forks    : N/A
+Watchers : N/A
+
+--------------------------------------------------------------------------------
+TOPICS / TAGS
+--------------------------------------------------------------------------------
+- Database
+- RDBMS
+- MS-Access
+
+--------------------------------------------------------------------------------
+FILE DIRECTORY STRUCTURE
+--------------------------------------------------------------------------------
+.
+├── N/A
+
+--------------------------------------------------------------------------------
+PROGRAM LIMITATIONS
+--------------------------------------------------------------------------------
+- Database only, is not integrated with a live application.
+- Lacking security and more dataset.
+
+--------------------------------------------------------------------------------
+CONTRIBUTORS
+--------------------------------------------------------------------------------
+- Aron-Arboleda (sole contributor)
+
+--------------------------------------------------------------------------------
+COPYRIGHT
+--------------------------------------------------------------------------------
+© 2026 Aron-Arboleda. All rights reserved.
+
+================================================================================

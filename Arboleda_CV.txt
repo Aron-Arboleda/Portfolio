@@ -161,6 +161,14 @@ REBYU: GAMIFIED FLASHCARDS                                 Nov. 2024 – Dec. 20
   Details   : Customized UI implementation with a UI/UX Designer.
   Role      : Software developer
 
+ASEAN LIBRARY DATABASE                                     Nov. 2024
+  Tech      : Microsoft Access | Database Application
+  Description: A database for ASEAN Library data — books, reading materials,
+               pictures, and paintings that help conserve ASEAN culture.
+  Details   : CC6 (Information Management) case study; RDBMS with ERD design,
+              entity relationships, and data lifecycle management.
+  Role      : Sole developer
+
 SPELL (Self-Processing English Language Lender)            Apr. 2024 – May 2024
   Tech      : Java with JavaSwing | Desktop Application
   Description: An app for manual/automatic text editing with grammar checking

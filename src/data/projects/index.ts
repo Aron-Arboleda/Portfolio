@@ -1,4 +1,5 @@
 import type { Project, ProjectCategory } from '@/types/project'
+import { aseanLibraryDatabase } from '@/data/projects/asean-library-database'
 import { draft2Dimen } from '@/data/projects/draft2dimen'
 import { draft2DimenV2 } from '@/data/projects/draft2dimen-v2'
 import { gasSmokeDetector } from '@/data/projects/gas-smoke-detector'
@@ -12,6 +13,7 @@ import { spell } from '@/data/projects/spell'
 import { subnettingVlsmCalculator } from '@/data/projects/subnetting-vlsm-calculator'
 import { uHeal } from '@/data/projects/u-heal'
 import { zodiacSignIdentifier } from '@/data/projects/zodiac-sign-identifier'
+import { projectSortKey } from '@/lib/dates'
 
 export const projects: Project[] = [
   uHeal,
@@ -21,6 +23,7 @@ export const projects: Project[] = [
   draft2Dimen,
   liwanagAtDunong,
   rebyu,
+  aseanLibraryDatabase,
   spell,
   subnettingVlsmCalculator,
   zodiacSignIdentifier,
@@ -49,6 +52,7 @@ const EXPECTED_SLUGS = [
   'draft2dimen',
   'liwanag-at-dunong',
   'rebyu',
+  'asean-library-database',
   'spell',
   'subnetting-vlsm-calculator',
   'zodiac-sign-identifier',
@@ -58,12 +62,12 @@ const EXPECTED_SLUGS = [
   'raite-hackathon',
 ] as const
 
-function sortByOrder(a: Project, b: Project): number {
-  return a.sortOrder - b.sortOrder
+function sortByDateDesc(a: Project, b: Project): number {
+  return projectSortKey(b.dateRange).localeCompare(projectSortKey(a.dateRange))
 }
 
 export function getAllProjects(): Project[] {
-  return [...projects].sort(sortByOrder)
+  return [...projects].sort(sortByDateDesc)
 }
 
 export function getProjectBySlug(slug: string): Project | undefined {

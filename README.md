@@ -86,10 +86,11 @@ Highlighted on the home page and marked as featured in the catalog:
 | Draft2Dimen | Desktop | Freelance — client + UI/UX collaboration |
 | Liwanag at Dunong | Full-stack | NGO web developer |
 | Rebyu | Full-stack | Gamified flashcard web app |
+| ASEAN Library Database | Desktop | MS Access RDBMS case study for ASEAN cultural materials |
 | SPELL | Desktop | Grammar-checking desktop app |
 | Subnetting & VLSM Calculator | Web | Browser-based networking calculators |
 | Zodiac Sign Identifier | Web | Static zodiac lookup by birth date |
-| Pivit | Desktop (CLI) | Gamified Python to-do list with quests and shop |
+| Pivit | CLI | Gamified Python to-do list with quests and shop |
 | Nom Veterinary Clinic | Desktop | VB.NET case study |
 | Reminders Builder | Desktop | Java Swing case study |
 

@@ -86,6 +86,13 @@ Each project needs `hero.webp` plus the gallery files listed.
 - `projects/liwanag-at-dunong/volunteer-form.webp`
 - `projects/liwanag-at-dunong/admin-dashboard.webp`
 
+### asean-library-database
+
+- `projects/asean-library-database/hero.webp`
+- `projects/asean-library-database/main-menu.webp`
+- `projects/asean-library-database/data-entry.webp`
+- `projects/asean-library-database/erd.webp`
+
 ### rebyu
 
 - `projects/rebyu/hero.webp`
@@ -117,7 +124,7 @@ Each project needs `hero.webp` plus the gallery files listed.
 - `projects/pivit/profile.webp`
 - `projects/pivit/quests.webp`
 - `projects/pivit/shop.webp`
-- `projects/pivit/update-quest.webp`
+- `projects/pivit/update.webp`
 
 ### nom-vet
 

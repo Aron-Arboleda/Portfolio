@@ -79,6 +79,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>http://localhost:4173/projects/asean-library-database</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:4173/projects/spell</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>

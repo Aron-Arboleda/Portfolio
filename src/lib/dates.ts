@@ -7,3 +7,8 @@ export function dateRange(
 ): DateRange {
   return { start, end, display }
 }
+
+/** Latest relevant month for sorting (end date, or start if open-ended). */
+export function projectSortKey(date: DateRange): string {
+  return date.end ?? date.start
+}
