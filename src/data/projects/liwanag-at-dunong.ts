@@ -1,10 +1,6 @@
 import type { Project } from '@/types/project'
 import { dateRange } from '@/lib/dates'
 import { buildProjectImages } from '@/lib/images'
-import {
-  PLACEHOLDER_CHALLENGES,
-  PLACEHOLDER_LEARNINGS,
-} from '@/data/projects/shared'
 
 const description =
   'A full-stack web application for the NGO "Liwanag at Dunong Project."'
@@ -14,8 +10,26 @@ export const liwanagAtDunong: Project = {
   title: 'Liwanag at Dunong Website',
   tagline: description,
   description,
-  categories: ['fullstack'],
+  categories: ['fullstack', 'web'],
   techStack: ['PHP', 'MySQL', 'React', 'JavaScript'],
+  techStackDetails: [
+    {
+      name: 'PHP',
+      note: 'A programming language that is a powerful language for web application development.',
+    },
+    {
+      name: 'MySQL',
+      note: 'A database management system that is a powerful database management system for web application development.',
+    },
+    {
+      name: 'React',
+      note: 'A frontend framework that is a powerful frontend framework for web application development.',
+    },
+    {
+      name: 'JavaScript',
+      note: 'A programming language that is a powerful programming language for web application development.',
+    },
+  ],
   features: [
     'Volunteer application forms',
     'Admin dashboard',
@@ -28,14 +42,24 @@ export const liwanagAtDunong: Project = {
     live: 'https://liwanagatdunongproject.ct.ws/',
   },
   images: buildProjectImages('liwanag-at-dunong', [
-    'landing.webp',
     'volunteer-form.webp',
-    'admin-dashboard.webp',
+    'footer.webp',
+    'admin-page.webp',
+    'volunteer-submissions-page.webp',
   ]),
   overview: description,
   contribution:
     'Handled volunteer applications with forms and an admin dashboard for the NGO.',
-  challenges: PLACEHOLDER_CHALLENGES,
-  learnings: PLACEHOLDER_LEARNINGS,
+  challenges: [
+    'Coding in raw PHP and MySQL',
+    'Constructing the database schemas',
+    'Establishing the relationships between the tables',
+    'Debugging the application',
+  ],
+  learnings: [
+    'Learned how to use PHP and MySQL to build a web application',
+    'Learned how to use React to build a web application',
+    'Learned how to use JavaScript to build a web application',
+  ],
   sortOrder: 6,
 }

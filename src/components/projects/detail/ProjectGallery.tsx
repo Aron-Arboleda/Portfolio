@@ -35,6 +35,8 @@ export function ProjectGallery({ project }: ProjectGalleryProps) {
               alt={`${project.title} — ${image.caption}`}
               title={project.title}
               slug={project.slug}
+              aspectRatio="auto"
+              fit="contain"
               className="transition-opacity group-hover:opacity-90"
             />
             <p className="m-0 mt-2 text-sm text-muted">{image.caption}</p>

@@ -30,7 +30,6 @@ export const projectCategories = [
   { id: 'desktop', label: 'Desktop' },
   { id: 'hardware', label: 'Hardware' },
   { id: 'fullstack', label: 'Full-stack' },
-  { id: 'competition', label: 'Competition' },
 ] as const
 
 export type ProjectFilterId = (typeof projectCategories)[number]['id']

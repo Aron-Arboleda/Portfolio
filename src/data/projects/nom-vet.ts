@@ -1,11 +1,6 @@
 import type { Project } from '@/types/project'
 import { dateRange } from '@/lib/dates'
 import { buildProjectImages } from '@/lib/images'
-import {
-  PLACEHOLDER_CHALLENGES,
-  PLACEHOLDER_LEARNINGS,
-} from '@/data/projects/shared'
-
 const description =
   'A computing solution managing information for a fictional clinic.'
 
@@ -16,6 +11,16 @@ export const nomVet: Project = {
   description,
   categories: ['desktop'],
   techStack: ['Visual Basic', 'VB.NET'],
+  techStackDetails: [
+    {
+      name: 'Visual Basic',
+      note: 'A programming language that is a powerful language for desktop application development.',
+    },
+    {
+      name: 'VB.NET',
+      note: 'A programming language that is a powerful language for desktop application development.',
+    },
+  ],
   features: [
     'Clinic information management',
     'Desktop application',
@@ -27,11 +32,24 @@ export const nomVet: Project = {
   links: {
     repo: 'https://github.com/Aron-Arboleda/NomVet',
   },
-  images: buildProjectImages('nom-vet', ['dashboard.webp', 'records.webp']),
+  images: buildProjectImages('nom-vet', [
+    'login-page.webp',
+    'dashboard-page.webp',
+    'booking-page.webp',
+    'profile-page.webp',
+    'admin-page.webp',
+  ]),
   overview: description,
   contribution:
     'Computer Programming 3 Case Study; learned Visual Basic for desktop application development.',
-  challenges: PLACEHOLDER_CHALLENGES,
-  learnings: PLACEHOLDER_LEARNINGS,
+  challenges: [
+    'Visual Basic applications sometimes glitches.',
+    'Even with the drag and drop feature, it was still a tedious process making the user interface of the application',
+  ],
+  learnings: [
+    'Learned how to use the Visual Basic programming language',
+    'Learned how to use the VB.NET programming language',
+    'Learned the workflow of Visual Basic applications',
+  ],
   sortOrder: 9,
 }

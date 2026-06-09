@@ -9,7 +9,7 @@ export const uHeal: Project = {
   title: 'U-HEAL',
   tagline: description,
   description,
-  categories: ['mobile', 'web'],
+  categories: ['mobile', 'web', 'fullstack'],
   techStack: ['React Native', 'Python', 'Firebase', 'Expo'],
   techStackDetails: [
     {

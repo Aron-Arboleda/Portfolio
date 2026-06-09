@@ -1,10 +1,6 @@
 import type { Project } from '@/types/project'
 import { dateRange } from '@/lib/dates'
 import { buildProjectImages } from '@/lib/images'
-import {
-  PLACEHOLDER_CHALLENGES,
-  PLACEHOLDER_LEARNINGS,
-} from '@/data/projects/shared'
 
 const description =
   'A calculator for structural component sizes and rebar computations.'

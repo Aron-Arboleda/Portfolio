@@ -3,7 +3,7 @@ import { cn } from '@/lib/cn'
 type ProjectImagePlaceholderProps = {
   title: string
   slug?: string
-  aspectRatio?: 'video' | 'square'
+  aspectRatio?: 'video' | 'square' | 'auto'
   framed?: boolean
   className?: string
 }
@@ -11,6 +11,7 @@ type ProjectImagePlaceholderProps = {
 const aspectClasses = {
   video: 'aspect-video',
   square: 'aspect-square',
+  auto: 'min-h-48',
 } as const
 
 export function ProjectImagePlaceholder({
