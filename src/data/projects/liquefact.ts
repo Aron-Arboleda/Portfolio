@@ -35,7 +35,17 @@ export const liquefact: Project = {
   overview: description,
   contribution:
     'Implemented a neural network using Python with a FastAPI backend and integrated it into a React GIS web application.',
-  challenges: PLACEHOLDER_CHALLENGES,
-  learnings: PLACEHOLDER_LEARNINGS,
+  challenges: [
+    'Borehole data collection and preprocessing.',
+    'Neural network training and evaluation.',
+    'FastAPI backend integration.',
+    'React GIS web application development.',
+  ],
+  learnings: [
+    'Neural networks are powerful for borehole estimation.',
+    'FastAPI is a great backend for scalable applications.',
+    'React GIS web applications are a great way to visualize data.',
+    'The combination of neural networks and FastAPI is a powerful way to estimate borehole information.',
+  ],
   sortOrder: 2,
 }

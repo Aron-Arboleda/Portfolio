@@ -34,7 +34,15 @@ export const draft2DimenV2: Project = {
   overview: description,
   contribution:
     'Modified the application; added local saving, steel formula, and cost computation.',
-  challenges: PLACEHOLDER_CHALLENGES,
-  learnings: PLACEHOLDER_LEARNINGS,
+  challenges: [
+    'Manually typings instructions for the steel formula functionality of the calculator',
+    'Debugging the PDF Pages',
+    'Making the application more user-friendly',
+  ],
+  learnings: [
+    'Learned how to make the computation more efficient with mathjs library',
+    'Learned how to implement accordingly with a UI/UX designer',
+    'Learned how to make deployment more streamlined using Github Releases.',
+  ],
   sortOrder: 3,
 }
