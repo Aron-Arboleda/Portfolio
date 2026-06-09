@@ -5,7 +5,6 @@ import { gasSmokeDetector } from '@/data/projects/gas-smoke-detector'
 import { liwanagAtDunong } from '@/data/projects/liwanag-at-dunong'
 import { liquefact } from '@/data/projects/liquefact'
 import { nomVet } from '@/data/projects/nom-vet'
-import { raiteHackathon } from '@/data/projects/raite-hackathon'
 import { rebyu } from '@/data/projects/rebyu'
 import { remindersBuilder } from '@/data/projects/reminders-builder'
 import { spell } from '@/data/projects/spell'
@@ -22,7 +21,6 @@ export const projects: Project[] = [
   spell,
   nomVet,
   remindersBuilder,
-  raiteHackathon,
 ]
 
 export const projectCategories = [
@@ -71,7 +69,7 @@ export function filterProjects(category: ProjectFilterId): Project[] {
   const sorted = getAllProjects()
   if (category === 'all') return sorted
   return sorted.filter((project) =>
-    project.categories.includes(category as ProjectCategory),
+    project.categories.includes(category as ProjectCategory)
   )
 }
 

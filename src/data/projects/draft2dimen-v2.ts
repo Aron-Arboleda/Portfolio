@@ -1,10 +1,6 @@
 import type { Project } from '@/types/project'
 import { dateRange } from '@/lib/dates'
 import { buildProjectImages } from '@/lib/images'
-import {
-  PLACEHOLDER_CHALLENGES,
-  PLACEHOLDER_LEARNINGS,
-} from '@/data/projects/shared'
 
 const description =
   'A calculator for computing sizes of structural components (Columns, Beams, Footing, Slab) with rebar and cost computation.'
@@ -16,6 +12,20 @@ export const draft2DimenV2: Project = {
   description,
   categories: ['desktop'],
   techStack: ['Electron', 'React', 'TypeScript'],
+  techStackDetails: [
+    {
+      name: 'Electron',
+      note: 'A framework for building cross-platform desktop applications with web technologies.',
+    },
+    {
+      name: 'React',
+      note: 'A frontend framework that is easy to learn and use.',
+    },
+    {
+      name: 'TypeScript',
+      note: "A programming language that is a superset of JavaScript that is the go-to language for frontend development in today's generation because of its type safety and scalability.",
+    },
+  ],
   features: [
     'Structural component calculations',
     'Local saving',

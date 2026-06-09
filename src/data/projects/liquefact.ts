@@ -16,6 +16,28 @@ export const liquefact: Project = {
   description,
   categories: ['web'],
   techStack: ['React', 'TypeScript', 'TailwindCSS', 'Python', 'FastAPI'],
+  techStackDetails: [
+    {
+      name: 'React',
+      note: 'This technology was used because it is a powerful frontend framework that is easy to learn and use.',
+    },
+    {
+      name: 'TypeScript',
+      note: "A programming language that is a superset of JavaScript that is the go-to language for frontend development in today's generation because of its type safety and scalability.",
+    },
+    {
+      name: 'TailwindCSS',
+      note: 'A CSS framework that is a utility-first CSS framework that is easy to learn and use.',
+    },
+    {
+      name: 'Python',
+      note: 'A programming language that is a powerful language for machine learning and data science.',
+    },
+    {
+      name: 'FastAPI',
+      note: 'A modern, fast, and production-ready web framework for building APIs with Python 3.7+.',
+    },
+  ],
   features: [
     'Geographical Information System interface',
     'Neural network borehole estimation',
