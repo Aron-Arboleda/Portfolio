@@ -1,0 +1,102 @@
+================================================================================
+                        PIVIT - GitHub Repository Overview
+================================================================================
+URL: https://github.com/Aron-Arboleda/Pivit
+
+--------------------------------------------------------------------------------
+GENERAL INFO
+--------------------------------------------------------------------------------
+Repository Name   : Pivit
+Owner / Developer : Aron-Arboleda (https://github.com/Aron-Arboleda)
+Visibility        : Public
+Project Started   : October 2023
+License           : LICENSE (included in repo)
+Repository ID     : 711510838
+Branch            : master
+Total Commits     : 8
+
+--------------------------------------------------------------------------------
+DESCRIPTION
+--------------------------------------------------------------------------------
+A Python CLI program that gamifies productivity by letting users create to-do
+lists as daily quests, add personal achievements to earn coins, level up their
+character profile, and purchase items at a shop to enhance motivation and
+engagement in staying productive.
+
+One-liner (from GitHub):
+  "CLI program, gamified todo and adding achievements (with coins, experience
+   points, and game profile)"
+
+--------------------------------------------------------------------------------
+FEATURES
+--------------------------------------------------------------------------------
+- To-do lists framed as quests
+- Gamified achievements system
+- Users can level up using EXP (experience) points and upgrade their character
+- Earning coins and EXP by completing quests and adding personal achievements
+- In-game shop where users can buy different levels of items using coins
+
+--------------------------------------------------------------------------------
+TECH STACK
+--------------------------------------------------------------------------------
+- Language : Python (100% of codebase)
+
+--------------------------------------------------------------------------------
+REPOSITORY STATS
+--------------------------------------------------------------------------------
+Stars    : 0
+Forks    : 0
+Watchers : 1
+
+--------------------------------------------------------------------------------
+TOPICS / TAGS
+--------------------------------------------------------------------------------
+- gamification
+- todo-list
+- cli-program
+
+--------------------------------------------------------------------------------
+FILE DIRECTORY STRUCTURE
+--------------------------------------------------------------------------------
+.
+├── Pivit.png                  (main banner/logo image)
+├── Pivit_profile.png          (screenshot: profile view)
+├── Pivit_quests.png           (screenshot: quests view)
+├── Pivit_shop.png             (screenshot: shop view)
+├── Pivit_update.png           (screenshot: updating a quest)
+├── Productivity.py            (main program file)
+├── ProductivityAccounts.txt   (stores user account data)
+├── ProductivityUsersData.txt  (stores user game/progress data)
+└── README.md
+
+--------------------------------------------------------------------------------
+INSTRUCTIONS
+--------------------------------------------------------------------------------
+How to Run:
+  - Pull the repository locally (VS Code recommended)
+  - Install all necessary extensions/programs to run Python files in VS Code
+  - Use the "Run Python File" button in VS Code to launch the program
+
+How to Use:
+  - Creating an account is required (username + password)
+  - Type /commands at any level to see available commands
+  - Actions available: add/update quests, add achievements, buy items, etc.
+
+--------------------------------------------------------------------------------
+PROGRAM LIMITATIONS
+--------------------------------------------------------------------------------
+- CLI only — no graphical user interface (noted as the developer's first project)
+- User data is stored in plain text files (ProductivityAccounts.txt &
+  ProductivityUsersData.txt), not in a secured database
+
+--------------------------------------------------------------------------------
+CONTRIBUTORS
+--------------------------------------------------------------------------------
+- Aron-Arboleda (sole contributor)
+
+--------------------------------------------------------------------------------
+COPYRIGHT
+--------------------------------------------------------------------------------
+© 2024 Aron-Arboleda. All rights reserved.
+
+================================================================================

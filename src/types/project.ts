@@ -2,6 +2,7 @@ export type ProjectCategory =
   | 'web'
   | 'mobile'
   | 'desktop'
+  | 'cli'
   | 'hardware'
   | 'fullstack'
   | 'competition'

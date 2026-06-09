@@ -51,5 +51,5 @@ export const nomVet: Project = {
     'Learned how to use the VB.NET programming language',
     'Learned the workflow of Visual Basic applications',
   ],
-  sortOrder: 9,
+  sortOrder: 11,
 }

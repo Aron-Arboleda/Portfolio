@@ -1,0 +1,99 @@
+================================================================================
+                  ZODIAC SIGN IDENTIFIER - GitHub Repository Overview
+================================================================================
+URL: https://github.com/Aron-Arboleda/ZodiacSignIdentifier
+
+--------------------------------------------------------------------------------
+GENERAL INFO
+--------------------------------------------------------------------------------
+Repository Name   : ZodiacSignIdentifier
+Owner / Developer : Aron-Arboleda (https://github.com/Aron-Arboleda)
+Visibility        : Public
+Project Started   : December 2023
+License           : LICENSE.md (included in repo)
+Repository ID     : 711731439
+Branch            : main
+Total Commits     : 8
+
+--------------------------------------------------------------------------------
+DESCRIPTION
+--------------------------------------------------------------------------------
+A simple static website that determines a person's zodiac sign based on their
+birth date. The objective is to create a user-friendly website where users can
+input their birth day and month to get their corresponding zodiac sign.
+
+One-liner (from GitHub):
+  "a static website to identify your zodiac sign"
+
+--------------------------------------------------------------------------------
+OBJECTIVE
+--------------------------------------------------------------------------------
+To create a user-friendly website that determines a person's zodiac sign based
+on their birth date.
+
+--------------------------------------------------------------------------------
+FEATURES
+--------------------------------------------------------------------------------
+- Calculates zodiac sign based on input day and month
+- Displays the corresponding zodiac sign image and name
+- Simple and intuitive user interface
+
+--------------------------------------------------------------------------------
+TECH STACK
+--------------------------------------------------------------------------------
+- HTML      (21.2% of codebase)
+- CSS       (37.4% of codebase)
+- JavaScript (41.4% of codebase)
+
+--------------------------------------------------------------------------------
+REPOSITORY STATS
+--------------------------------------------------------------------------------
+Stars    : 0
+Forks    : 0
+Watchers : 1
+Releases : None published
+Packages : None
+
+--------------------------------------------------------------------------------
+TOPICS / TAGS
+--------------------------------------------------------------------------------
+- web-development
+- astrology
+- zodiac-sign-finder
+
+--------------------------------------------------------------------------------
+LIVE WEBSITE
+--------------------------------------------------------------------------------
+URL: https://aron-arboleda.github.io/ZodiacSignIdentifier/
+
+--------------------------------------------------------------------------------
+FILE DIRECTORY STRUCTURE
+--------------------------------------------------------------------------------
+.
+├── index.html       (main HTML page)
+├── README.md        (documentation)
+├── style.css        (stylesheet)
+├── ZODI.png         (banner/logo image)
+├── zodiacJS.js      (JavaScript logic)
+└── images/          (folder containing zodiac sign images)
+
+--------------------------------------------------------------------------------
+HOW TO USE
+--------------------------------------------------------------------------------
+Simply visit the live website link:
+  https://aron-arboleda.github.io/ZodiacSignIdentifier/
+
+No installation or setup required — it runs entirely in the browser as a
+static website.
+
+--------------------------------------------------------------------------------
+CONTRIBUTORS
+--------------------------------------------------------------------------------
+- Aron-Arboleda (sole contributor)
+
+--------------------------------------------------------------------------------
+COPYRIGHT
+--------------------------------------------------------------------------------
+© 2025 Aron-Arboleda. All rights reserved.
+
+================================================================================

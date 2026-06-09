@@ -170,6 +170,30 @@ SPELL (Self-Processing English Language Lender)            Apr. 2024 – May 202
               used Launch4j and InnoSetup for compilation.
   Role      : Main software developer
 
+SUBNETTING & VLSM CALCULATOR                               Jan. 2024
+  Tech      : HTML, CSS, JavaScript, Webpack | Web Application
+  Description: A web app for subnetting and VLSM calculations for networking
+               practitioners.
+  Link      : https://aron-arboleda.github.io/SubnettingAndVLSMCalculator/
+  Repository: https://github.com/Aron-Arboleda/SubnettingAndVLSMCalculator
+  Details   : Calculates subnets and VLSM with a responsive, browser-based UI.
+  Role      : Sole developer
+
+ZODIAC SIGN IDENTIFIER                                     Dec. 2023
+  Tech      : HTML, CSS, JavaScript | Web Application
+  Description: A static website that identifies your zodiac sign from your
+               birth day and month.
+  Link      : https://aron-arboleda.github.io/ZodiacSignIdentifier/
+  Repository: https://github.com/Aron-Arboleda/ZodiacSignIdentifier
+  Role      : Sole developer
+
+PIVIT                                                      Oct. 2022
+  Tech      : Python | CLI Application
+  Description: A gamified CLI to-do list with quests, achievements, EXP,
+               coins, and an in-game shop.
+  Repository: https://github.com/Aron-Arboleda/Pivit
+  Role      : Sole developer
+
 NOM VETERINARY CLINIC INFORMATION SYSTEM                   May 2023
   Tech      : Visual Basic, VB.NET | Desktop Application
   Description: A computing solution managing information for a fictional clinic.

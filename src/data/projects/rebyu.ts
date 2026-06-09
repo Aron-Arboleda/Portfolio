@@ -43,7 +43,7 @@ export const rebyu: Project = {
   },
   images: buildProjectImages('rebyu', [
     'home-page.webp',
-    'flashcards-set.webp',
+    'flashcard-set.webp',
     'study-page.webp',
     'end-screen.webp',
   ]),

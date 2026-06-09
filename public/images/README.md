@@ -96,8 +96,28 @@ Each project needs `hero.webp` plus the gallery files listed.
 ### spell
 
 - `projects/spell/hero.webp`
-- `projects/spell/editor.webp`
-- `projects/spell/grammar-check.webp`
+- `projects/spell/home.webp`
+- `projects/spell/manual-editor.webp`
+- `projects/spell/automatic-editor.webp`
+
+### subnetting-vlsm-calculator
+
+- `projects/subnetting-vlsm-calculator/hero.webp`
+- `projects/subnetting-vlsm-calculator/subnetting.webp`
+- `projects/subnetting-vlsm-calculator/vlsm.webp`
+
+### zodiac-sign-identifier
+
+- `projects/zodiac-sign-identifier/hero.webp`
+- `projects/zodiac-sign-identifier/home-page.webp`
+
+### pivit
+
+- `projects/pivit/hero.webp`
+- `projects/pivit/profile.webp`
+- `projects/pivit/quests.webp`
+- `projects/pivit/shop.webp`
+- `projects/pivit/update-quest.webp`
 
 ### nom-vet
 

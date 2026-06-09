@@ -8,6 +8,7 @@ export const categoryLabels: Record<ProjectCategory, string> = {
   web: 'Web',
   mobile: 'Mobile',
   desktop: 'Desktop',
+  cli: 'CLI',
   hardware: 'Hardware',
   fullstack: 'Full-stack',
   competition: 'Competition',

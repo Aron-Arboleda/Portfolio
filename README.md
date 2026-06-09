@@ -87,6 +87,9 @@ Highlighted on the home page and marked as featured in the catalog:
 | Liwanag at Dunong | Full-stack | NGO web developer |
 | Rebyu | Full-stack | Gamified flashcard web app |
 | SPELL | Desktop | Grammar-checking desktop app |
+| Subnetting & VLSM Calculator | Web | Browser-based networking calculators |
+| Zodiac Sign Identifier | Web | Static zodiac lookup by birth date |
+| Pivit | Desktop (CLI) | Gamified Python to-do list with quests and shop |
 | Nom Veterinary Clinic | Desktop | VB.NET case study |
 | Reminders Builder | Desktop | Java Swing case study |
 

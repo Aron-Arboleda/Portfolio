@@ -6,9 +6,12 @@ import { liwanagAtDunong } from '@/data/projects/liwanag-at-dunong'
 import { liquefact } from '@/data/projects/liquefact'
 import { nomVet } from '@/data/projects/nom-vet'
 import { rebyu } from '@/data/projects/rebyu'
+import { pivit } from '@/data/projects/pivit'
 import { remindersBuilder } from '@/data/projects/reminders-builder'
 import { spell } from '@/data/projects/spell'
+import { subnettingVlsmCalculator } from '@/data/projects/subnetting-vlsm-calculator'
 import { uHeal } from '@/data/projects/u-heal'
+import { zodiacSignIdentifier } from '@/data/projects/zodiac-sign-identifier'
 
 export const projects: Project[] = [
   uHeal,
@@ -19,6 +22,9 @@ export const projects: Project[] = [
   liwanagAtDunong,
   rebyu,
   spell,
+  subnettingVlsmCalculator,
+  zodiacSignIdentifier,
+  pivit,
   nomVet,
   remindersBuilder,
 ]
@@ -28,6 +34,7 @@ export const projectCategories = [
   { id: 'web', label: 'Web' },
   { id: 'mobile', label: 'Mobile' },
   { id: 'desktop', label: 'Desktop' },
+  { id: 'cli', label: 'CLI' },
   { id: 'hardware', label: 'Hardware' },
   { id: 'fullstack', label: 'Full-stack' },
 ] as const
@@ -43,6 +50,9 @@ const EXPECTED_SLUGS = [
   'liwanag-at-dunong',
   'rebyu',
   'spell',
+  'subnetting-vlsm-calculator',
+  'zodiac-sign-identifier',
+  'pivit',
   'nom-vet',
   'reminders-builder',
   'raite-hackathon',

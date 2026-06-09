@@ -1,0 +1,116 @@
+================================================================================
+             SUBNETTING AND VLSM CALCULATOR - GitHub Repository Overview
+================================================================================
+URL: https://github.com/Aron-Arboleda/SubnettingAndVLSMCalculator
+
+--------------------------------------------------------------------------------
+GENERAL INFO
+--------------------------------------------------------------------------------
+Repository Name   : SubnettingAndVLSMCalculator
+Owner / Developer : Aron-Arboleda (https://github.com/Aron-Arboleda)
+Visibility        : Public
+Project Started   : January 2024
+License           : LICENSE (included in repo)
+Repository ID     : 743142413
+Branch            : main
+Total Commits     : 34
+
+--------------------------------------------------------------------------------
+DESCRIPTION
+--------------------------------------------------------------------------------
+A web application dedicated to helping networking professionals quickly and
+accurately divide and subnet networks. The platform caters to individuals of
+all skill levels, offering intuitive tools and resources for efficient network
+segmentation. With a seamless interface, it simplifies the complexities of
+network subdivision, saving time and enhancing productivity.
+
+One-liner (from GitHub):
+  "Web app, subnetting and VLSM Calculator for networking practitioners"
+
+--------------------------------------------------------------------------------
+FEATURES
+--------------------------------------------------------------------------------
+- Calculates subnets for a given IP address and CIDR
+- Calculates VLSM for a given IP address and list of required hosts
+- User-friendly interface
+- Responsive design
+
+--------------------------------------------------------------------------------
+FEATURES STILL IN DEVELOPMENT
+--------------------------------------------------------------------------------
+- Practice questions functionality for subnetting and VLSM
+- Subnetting IPv6 networks
+
+--------------------------------------------------------------------------------
+TECH STACK
+--------------------------------------------------------------------------------
+- HTML
+- CSS
+- JavaScript (100% of tracked codebase)
+- Webpack   (module bundler)
+- Vitest    (testing framework)
+- ESLint    (linting / code quality)
+
+--------------------------------------------------------------------------------
+REPOSITORY STATS
+--------------------------------------------------------------------------------
+Stars    : 0
+Forks    : 0
+Watchers : 1
+Releases : None published
+Packages : None
+
+--------------------------------------------------------------------------------
+TOPICS / TAGS
+--------------------------------------------------------------------------------
+- web-development
+- networking
+- subnet-calculator
+
+--------------------------------------------------------------------------------
+LIVE WEBSITE
+--------------------------------------------------------------------------------
+URL: https://aron-arboleda.github.io/SubnettingAndVLSMCalculator/
+
+--------------------------------------------------------------------------------
+FILE DIRECTORY STRUCTURE
+--------------------------------------------------------------------------------
+SubnettingAndVLSMCalculator/
+├── dist/                  (compiled/bundled output files)
+├── src/                   (source code)
+├── .eslintrc.json         (ESLint configuration)
+├── .gitignore
+├── LICENSE
+├── README.md
+├── homepage.png           (screenshot: home page)
+├── package-lock.json      (exact dependency lockfile)
+├── package.json           (project metadata and dependencies)
+├── subnetting.png         (screenshot: subnetting page)
+└── vlsm.png               (screenshot: VLSM page)
+
+--------------------------------------------------------------------------------
+PAGES / SCREENSHOTS
+--------------------------------------------------------------------------------
+- Home Page      : homepage.png
+- Subnetting Page: subnetting.png
+- VLSM Page      : vlsm.png
+
+--------------------------------------------------------------------------------
+HOW TO USE
+--------------------------------------------------------------------------------
+Simply visit the live website:
+  https://aron-arboleda.github.io/SubnettingAndVLSMCalculator/
+
+No installation required — runs entirely in the browser.
+
+--------------------------------------------------------------------------------
+CONTRIBUTORS
+--------------------------------------------------------------------------------
+- Aron-Arboleda (sole contributor)
+
+--------------------------------------------------------------------------------
+COPYRIGHT
+--------------------------------------------------------------------------------
+© 2024 Aron-Arboleda. All rights reserved.
+
+================================================================================

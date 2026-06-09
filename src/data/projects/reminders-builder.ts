@@ -48,5 +48,5 @@ export const remindersBuilder: Project = {
     'Learned how to do Object Oriented Programming',
     'Learned how to make desktop applications using JavaSwing',
   ],
-  sortOrder: 10,
+  sortOrder: 12,
 }
