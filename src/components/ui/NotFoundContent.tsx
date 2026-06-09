@@ -9,7 +9,7 @@ type NotFoundContentProps = {
 export function NotFoundContent({ subtitle }: NotFoundContentProps) {
   return (
     <Section className="py-0 md:py-0">
-      <p className="m-0 font-heading text-6xl text-accent sm:text-7xl">404</p>
+      <p className="display-text m-0 gradient-stroke-text">404</p>
       <SectionHeading
         title="Page not found"
         titleAs="h1"

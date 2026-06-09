@@ -21,8 +21,8 @@ export function FadeInSection({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, x: -16, y: 12 }}
+      whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
       transition={{ duration: 0.45, delay }}
       className={cn(className)}

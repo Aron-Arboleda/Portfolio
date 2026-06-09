@@ -17,6 +17,7 @@ export default function JourneyPage() {
           title="My Journey"
           subtitle="The path I took from computer servicing in high school to building ML-powered applications and thesis research."
           titleAs="h1"
+          index={1}
         />
         <FadeInSection className="mt-12 overflow-x-hidden">
           <Timeline milestones={journey} />

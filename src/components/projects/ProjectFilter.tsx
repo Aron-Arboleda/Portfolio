@@ -11,7 +11,7 @@ export function ProjectFilter({ active, onChange }: ProjectFilterProps) {
     <div
       role="tablist"
       aria-label="Filter projects by category"
-      className="flex flex-nowrap gap-2 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] md:flex-wrap [&::-webkit-scrollbar]:hidden"
+      className="flex flex-nowrap gap-2 overflow-x-auto border-b-2 border-border pb-4 [-ms-overflow-style:none] [scrollbar-width:none] md:flex-wrap [&::-webkit-scrollbar]:hidden"
     >
       {projectCategories.map(({ id, label }) => {
         const isActive = active === id
@@ -23,10 +23,10 @@ export function ProjectFilter({ active, onChange }: ProjectFilterProps) {
             aria-selected={isActive}
             onClick={() => onChange(id)}
             className={cn(
-              'shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors duration-200 min-h-11',
+              'shrink-0 border-2 px-4 py-2 font-mono text-xs font-medium uppercase tracking-wide transition-colors duration-200 min-h-11',
               isActive
-                ? 'bg-accent-muted text-accent'
-                : 'border border-border text-muted hover:text-primary',
+                ? 'border-primary bg-primary text-inverse ink-shadow'
+                : 'border-border bg-surface-elevated text-muted hover:border-accent hover:text-accent',
             )}
           >
             {label}

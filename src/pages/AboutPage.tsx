@@ -28,9 +28,10 @@ export default function AboutPage() {
           <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-12">
             <ProfileAvatar size="lg" />
             <div className="flex-1">
-              <h1 className="m-0 font-heading text-4xl text-primary sm:text-5xl">
+              <h1 className="m-0 font-heading text-4xl font-semibold text-primary sm:text-5xl">
                 About me
               </h1>
+              <div className="gradient-rule mt-4" aria-hidden="true" />
               <p className="m-0 mt-6 max-w-3xl leading-relaxed text-muted">
                 {profile.objective}
               </p>
@@ -52,7 +53,11 @@ export default function AboutPage() {
       </FadeInSection>
 
       <FadeInSection delay={0.08}>
-        <Section title="Education" subtitle="My academic path in computer science.">
+        <Section
+          title="Education"
+          subtitle="My academic path in computer science."
+          index={2}
+        >
           {college && <EducationCard education={college} />}
           <div className="mt-6 grid gap-6 md:grid-cols-2">
             {seniorHigh && <EducationCard education={seniorHigh} />}
@@ -65,6 +70,7 @@ export default function AboutPage() {
         <Section
           title="Certificates"
           subtitle="Courses and certifications earned along the way."
+          index={3}
         >
           <CertificateList certificates={certificates} />
         </Section>
@@ -74,6 +80,7 @@ export default function AboutPage() {
         <Section
           title="Organizations"
           subtitle="Communities and causes I've been part of."
+          index={4}
         >
           <div className="grid gap-6 md:grid-cols-2">
             {organizations.map((organization, index) => (

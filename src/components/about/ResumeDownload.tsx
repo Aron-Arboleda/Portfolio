@@ -23,7 +23,7 @@ export function ResumeDownload({
       className={cn(buttonVariants({ variant }), 'gap-2', className)}
     >
       <Download size={16} aria-hidden="true" />
-      Download Resume
+      Download CV
     </a>
   )
 }

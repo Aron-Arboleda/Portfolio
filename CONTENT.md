@@ -4,10 +4,11 @@ How to fill in portfolio content after launch. All copy lives in `src/data/` —
 
 ## Quick wins
 
-1. **Profile photo** — `public/images/profile/aron-portrait.webp` (800×800 WebP)
-2. **LinkedIn URL** — `src/data/profile.ts` → `socials` LinkedIn `href`
-3. **Resume PDF** — `public/Aron_Arboleda_Resume.pdf` (linked via `profile.resumeUrl`)
-4. **Featured project heroes** — `u-heal`, `liquefact`, `draft2dimen-v2` (see [public/images/README.md](public/images/README.md))
+1. **Profile photo (About)** — `public/images/profile/aron-portrait.webp` (800×800 WebP)
+2. **Home hero photo** — `public/images/profile/aron-hero.webp` (600×800 or 3:4 portrait WebP)
+3. **LinkedIn URL** — `src/data/profile.ts` → `socials` LinkedIn `href`
+4. **Resume PDF** — `public/Aron_Arboleda_Resume.pdf` (linked via `profile.resumeUrl`)
+5. **Featured project heroes** — `u-heal`, `liquefact`, `draft2dimen-v2` (see [public/images/README.md](public/images/README.md))
 
 ## Per-project editing
 

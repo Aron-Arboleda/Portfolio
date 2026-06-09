@@ -23,24 +23,24 @@ export function Header() {
     <>
       <header
         className={cn(
-          'sticky top-0 z-50 border-b bg-surface/85 backdrop-blur-md transition-shadow',
+          'sticky top-0 z-50 border-b-2 bg-surface/90 backdrop-blur-md transition-shadow',
           scrolled
-            ? 'border-border-strong shadow-[var(--shadow-soft)]'
+            ? 'border-accent shadow-[var(--shadow-ink)]'
             : 'border-border',
         )}
       >
         <div className="mx-auto flex h-16 max-w-content items-center justify-between gap-4 px-4 sm:px-6">
           <NavLink
             to="/"
-            className="flex items-center gap-3 no-underline transition-colors hover:text-accent"
+            className="group flex items-center gap-3 no-underline transition-colors hover:text-accent"
           >
             <span
-              className="flex h-9 w-9 items-center justify-center rounded-button border border-accent font-heading text-sm text-accent"
+              className="flex h-9 w-9 items-center justify-center border-2 border-primary bg-surface-elevated font-mono text-xs font-bold text-primary ink-shadow transition-colors group-hover:border-accent group-hover:text-accent"
               aria-hidden="true"
             >
               AR
             </span>
-            <span className="font-heading text-lg text-primary">
+            <span className="hidden font-heading text-lg font-semibold text-primary sm:inline">
               {profile.siteName}
             </span>
           </NavLink>
@@ -71,7 +71,7 @@ export function Header() {
 
             <button
               type="button"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-button border border-border text-primary hover:border-accent hover:text-accent md:hidden"
+              className="inline-flex h-11 w-11 items-center justify-center border-2 border-border bg-surface-elevated text-primary ink-shadow hover:border-accent hover:text-accent md:hidden"
               aria-label="Open menu"
               aria-expanded={mobileOpen}
               aria-controls="mobile-nav"

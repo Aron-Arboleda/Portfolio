@@ -1,13 +1,9 @@
 import { ProjectImage } from '@/components/projects/ProjectImage'
 import { Badge } from '@/components/ui/Badge'
 import { Section } from '@/components/ui/Section'
-import { SectionHeading } from '@/components/ui/SectionHeading'
 import type { Project } from '@/types/project'
+import { buttonVariants } from '@/lib/button-variants'
 import { categoryLabels, isExternalUrl } from '@/lib/projects'
-
-const externalLinkClass =
-  'inline-flex h-10 items-center justify-center rounded-button px-5 text-sm font-medium no-underline transition-colors'
-
 type ProjectDetailHeroProps = {
   project: Project
 }
@@ -15,72 +11,76 @@ type ProjectDetailHeroProps = {
 export function ProjectDetailHero({ project }: ProjectDetailHeroProps) {
   return (
     <Section className="py-0 md:py-0">
-      <div className="flex flex-wrap gap-2">
-        {project.categories.map((category) => (
-          <Badge key={category}>{categoryLabels[category]}</Badge>
-        ))}
-      </div>
+      <div className="grid gap-10 lg:grid-cols-2 lg:items-start lg:gap-12">
+        <div>
+          <div className="flex flex-wrap gap-2">
+            {project.categories.map((category) => (
+              <Badge key={category}>{categoryLabels[category]}</Badge>
+            ))}
+          </div>
 
-      <SectionHeading
-        title={project.title}
-        subtitle={project.tagline}
-        titleAs="h1"
-        className="mt-4"
-      />
+          <h1 className="m-0 mt-4 font-heading text-4xl font-semibold leading-tight text-primary sm:text-5xl">
+            {project.title}
+          </h1>
+          <div className="gradient-rule mt-4" aria-hidden="true" />
 
-      <p className="m-0 mt-4 text-sm text-muted">
-        <span className="font-medium text-primary">{project.role}</span>
-        {' · '}
-        {project.dateRange.display}
-      </p>
+          <p className="m-0 mt-4 text-lg text-muted">{project.tagline}</p>
 
-      <div className="mt-6 flex flex-wrap gap-3">
-        {project.links.live && (
-          <a
-            href={project.links.live}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${externalLinkClass} bg-accent text-inverse hover:opacity-90`}
-          >
-            Live Demo
-          </a>
-        )}
-        {project.links.repo && (
-          <a
-            href={project.links.repo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${externalLinkClass} border border-border text-primary hover:border-accent hover:text-accent`}
-          >
-            Repository
-          </a>
-        )}
-        {project.links.mobile &&
-          (isExternalUrl(project.links.mobile) ? (
-            <a
-              href={project.links.mobile}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${externalLinkClass} border border-border text-primary hover:border-accent hover:text-accent`}
-            >
-              Mobile App
-            </a>
-          ) : (
-            <span className="inline-flex items-center rounded-full bg-surface-muted px-3 py-1.5 text-sm text-muted">
-              Mobile: {project.links.mobile}
-            </span>
-          ))}
-      </div>
+          <p className="m-0 mt-4 font-mono text-sm text-muted">
+            <span className="font-medium text-primary">{project.role}</span>
+            {' · '}
+            {project.dateRange.display}
+          </p>
 
-      <div className="mt-10 max-h-[480px] overflow-hidden rounded-card">
-        <ProjectImage
-          src={project.images.hero}
-          alt={project.title}
-          title={project.title}
-          slug={project.slug}
-          loading="eager"
-          className="max-h-[480px]"
-        />
+          <div className="mt-6 flex flex-wrap gap-3">
+            {project.links.live && (
+              <a
+                href={project.links.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonVariants({ variant: 'primary', size: 'md' })}
+              >
+                Live Demo
+              </a>
+            )}
+            {project.links.repo && (
+              <a
+                href={project.links.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonVariants({ variant: 'secondary', size: 'md' })}
+              >
+                Repository
+              </a>
+            )}
+            {project.links.mobile &&
+              (isExternalUrl(project.links.mobile) ? (
+                <a
+                  href={project.links.mobile}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={buttonVariants({ variant: 'secondary', size: 'md' })}
+                >
+                  Mobile App
+                </a>
+              ) : (
+                <span className="inline-flex items-center rounded-button border border-border px-3 py-1.5 font-mono text-sm text-muted">
+                  Mobile: {project.links.mobile}
+                </span>
+              ))}
+          </div>
+        </div>
+
+        <div className="ink-shadow overflow-hidden border-2 border-border">
+          <ProjectImage
+            src={project.images.hero}
+            alt={project.title}
+            title={project.title}
+            slug={project.slug}
+            loading="eager"
+            className="rounded-none border-0"
+          />
+        </div>
       </div>
     </Section>
   )

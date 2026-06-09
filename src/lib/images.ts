@@ -20,6 +20,11 @@ export function profileImagePath(filename = 'aron-portrait.webp'): string {
   return `${PROFILE_IMAGES_BASE}/${filename}`
 }
 
+/** Home hero — separate from About portrait (square). */
+export function homeHeroImagePath(filename = 'aron-hero.webp'): string {
+  return `${PROFILE_IMAGES_BASE}/${filename}`
+}
+
 export function buildProjectImages(
   slug: string,
   galleryFilenames: string[],

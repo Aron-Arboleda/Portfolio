@@ -21,17 +21,17 @@ export function ProjectImagePlaceholder({
   return (
     <div
       className={cn(
-        'flex flex-col items-center justify-center rounded-card border border-border',
-        'bg-gradient-to-br from-accent/10 via-surface-muted to-surface-elevated',
+        'flex flex-col items-center justify-center border-2 border-dashed border-border',
+        'bg-gradient-to-br from-accent-muted via-surface-muted to-surface-elevated',
         aspectClasses[aspectRatio],
         className,
       )}
     >
-      <p className="m-0 px-6 text-center font-heading text-lg text-primary">
+      <p className="m-0 px-6 text-center font-heading text-lg font-semibold text-primary">
         {title}
       </p>
       {slug && (
-        <p className="m-0 mt-2 text-xs text-muted">{slug}</p>
+        <p className="m-0 mt-2 font-mono text-xs text-muted">{slug}</p>
       )}
     </div>
   )

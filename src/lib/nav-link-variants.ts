@@ -2,10 +2,10 @@ import { cn } from '@/lib/cn'
 
 export function navLinkClass(isActive: boolean, size: 'sm' | 'lg' = 'sm') {
   return cn(
-    'block rounded-button no-underline transition-colors',
-    size === 'sm' ? 'px-3 py-1.5 text-sm' : 'px-4 py-3 text-base',
+    'block font-mono uppercase tracking-wider no-underline transition-colors',
+    size === 'sm' ? 'px-3 py-1.5 text-xs' : 'px-4 py-3 text-2xl font-heading font-semibold normal-case tracking-tight',
     isActive
-      ? 'bg-accent-muted font-medium text-accent'
+      ? 'text-accent underline decoration-2 underline-offset-4'
       : 'text-muted hover:text-primary',
   )
 }

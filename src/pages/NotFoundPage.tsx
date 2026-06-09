@@ -8,7 +8,7 @@ export default function NotFoundPage() {
   usePageMeta(toPageMeta(routeSeo.notFound))
 
   return (
-    <HeroGrain className="flex flex-1 border-b border-border bg-surface-muted">
+    <HeroGrain className="flex flex-1 border-b-2 border-border bg-surface-muted">
       <PageShell className="flex flex-1 flex-col justify-center py-16 sm:py-24">
         <NotFoundContent />
       </PageShell>

@@ -18,6 +18,7 @@ export default function ExperiencePage() {
             title="Experience"
             subtitle="Freelance work delivering web and desktop applications for clients."
             titleAs="h1"
+            index={1}
           />
         </FadeInSection>
         <div className="mt-10 flex flex-col gap-6">

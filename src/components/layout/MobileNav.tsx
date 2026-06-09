@@ -34,7 +34,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
     <>
       <div
         className={cn(
-          'fixed inset-0 z-40 bg-primary/20 backdrop-blur-sm md:hidden',
+          'fixed inset-0 z-40 bg-primary/30 backdrop-blur-sm md:hidden',
           'transition-opacity duration-300 motion-reduce:transition-none',
           open ? 'opacity-100' : 'pointer-events-none opacity-0',
         )}
@@ -48,26 +48,27 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
         aria-modal="true"
         aria-label="Mobile navigation"
         className={cn(
-          'fixed inset-y-0 right-0 z-50 flex w-full max-w-xs flex-col',
-          'border-l border-border bg-surface-elevated shadow-[var(--shadow-soft)] md:hidden',
-          'transition-transform duration-300 ease-out motion-reduce:transition-none',
-          open ? 'translate-x-0' : 'translate-x-full',
+          'fixed inset-0 z-50 flex flex-col bg-surface md:hidden',
+          'transition-opacity duration-300 motion-reduce:transition-none',
+          open ? 'opacity-100' : 'pointer-events-none opacity-0',
         )}
       >
-        <div className="flex items-center justify-between border-b border-border px-4 py-4">
-          <span className="font-heading text-lg text-primary">Menu</span>
+        <div className="flex items-center justify-between border-b-2 border-border px-6 py-5">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+            Navigate
+          </span>
           <button
             type="button"
             onClick={onClose}
-            className="rounded-button px-3 py-1.5 text-sm text-muted hover:text-primary"
+            className="font-mono text-sm uppercase tracking-wide text-muted hover:text-primary"
             aria-label="Close menu"
           >
             Close
           </button>
         </div>
 
-        <nav aria-label="Mobile navigation" className="flex-1 overflow-y-auto p-4">
-          <ul className="m-0 flex list-none flex-col gap-1 p-0">
+        <nav aria-label="Mobile navigation" className="flex flex-1 flex-col justify-center px-6">
+          <ul className="m-0 flex list-none flex-col gap-2 p-0">
             {navLinks.map(({ to, label, end }) => (
               <li key={to}>
                 <NavLink
@@ -83,8 +84,10 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
           </ul>
         </nav>
 
-        <div className="flex items-center justify-between border-t border-border px-4 py-4">
-          <span className="text-sm text-muted">Theme</span>
+        <div className="flex items-center justify-between border-t-2 border-border px-6 py-5">
+          <span className="font-mono text-xs uppercase tracking-wide text-muted">
+            Theme
+          </span>
           <ThemeToggle />
         </div>
       </div>

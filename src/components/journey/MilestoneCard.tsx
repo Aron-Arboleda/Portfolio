@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Badge } from '@/components/ui/Badge'
+import { Card } from '@/components/ui/Card'
 import type { JourneyMilestone } from '@/types/journey'
 import { cn } from '@/lib/cn'
 
@@ -14,32 +15,54 @@ const kindLabels: Record<JourneyMilestone['kind'], string> = {
 
 type MilestoneCardProps = {
   milestone: JourneyMilestone
+  align?: 'left' | 'right'
   className?: string
 }
 
-export function MilestoneCard({ milestone, className }: MilestoneCardProps) {
+export function MilestoneCard({
+  milestone,
+  align = 'left',
+  className,
+}: MilestoneCardProps) {
   return (
-    <div className={cn(className)}>
-      <div className="flex flex-wrap items-center gap-2">
-        <span className="font-heading text-2xl text-accent lg:text-3xl">
+    <Card className={cn('relative z-10', className)}>
+      <div
+        className={cn(
+          'flex flex-wrap items-center gap-2',
+          align === 'right' && 'lg:justify-end',
+        )}
+      >
+        <span className="font-mono text-sm font-medium text-accent lg:hidden">
           {milestone.year}
         </span>
         <Badge>{kindLabels[milestone.kind]}</Badge>
       </div>
-      <h3 className="m-0 mt-3 font-heading text-xl text-primary">
+      <h3
+        className={cn(
+          'm-0 mt-3 font-heading text-xl font-semibold text-primary',
+          align === 'right' && 'lg:text-right',
+        )}
+      >
         {milestone.title}
       </h3>
-      <p className="m-0 mt-2 max-w-2xl leading-relaxed text-muted">
+      <p
+        className={cn(
+          'm-0 mt-2 leading-relaxed text-muted',
+          align === 'right' && 'lg:text-right',
+        )}
+      >
         {milestone.body}
       </p>
       {milestone.projectSlug && (
-        <Link
-          to={`/projects/${milestone.projectSlug}`}
-          className="mt-3 inline-block text-sm text-accent no-underline hover:underline"
-        >
-          View project &rarr;
-        </Link>
+        <div className={cn('mt-3', align === 'right' && 'lg:text-right')}>
+          <Link
+            to={`/projects/${milestone.projectSlug}`}
+            className="font-mono text-sm text-accent no-underline hover:underline"
+          >
+            View project &rarr;
+          </Link>
+        </div>
       )}
-    </div>
+    </Card>
   )
 }

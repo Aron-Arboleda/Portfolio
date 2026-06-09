@@ -25,10 +25,10 @@ export const profile: Profile = {
     },
     {
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/aron-arboleda',
+      href: 'https://www.linkedin.com/in/aron-arboleda-86497b344/',
       type: 'linkedin',
     },
   ],
-  highlights: ['Magna Cum Laude', 'Full-Stack Developer'],
+  highlights: ['Specializing in Front-End', 'Trackerteer Intern'],
   resumeUrl: '/Aron_Arboleda_Resume.pdf',
 }

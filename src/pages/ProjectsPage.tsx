@@ -41,6 +41,7 @@ export default function ProjectsPage() {
             title="Projects"
             subtitle="A collection of web, mobile, desktop, and hardware work — from case studies to client deliverables."
             titleAs="h1"
+            index={1}
           />
         </FadeInSection>
 

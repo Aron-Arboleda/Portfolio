@@ -1,7 +1,9 @@
 /// <reference types="vite/client" />
 
-declare module '@fontsource-variable/dm-sans'
-declare module '@fontsource/instrument-serif/400.css'
+declare module '@fontsource-variable/bricolage-grotesque'
+declare module '@fontsource-variable/space-grotesk'
+declare module '@fontsource/ibm-plex-mono/400.css'
+declare module '@fontsource/ibm-plex-mono/500.css'
 
 interface ImportMetaEnv {
   readonly VITE_SITE_URL?: string

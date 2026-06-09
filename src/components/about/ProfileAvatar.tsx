@@ -9,7 +9,7 @@ type ProfileAvatarProps = {
 
 const sizeClasses = {
   md: 'h-24 w-24 text-lg',
-  lg: 'h-40 w-40 text-2xl',
+  lg: 'h-44 w-44 text-2xl sm:h-48 sm:w-48',
 } as const
 
 export function ProfileAvatar({ size = 'lg', className }: ProfileAvatarProps) {
@@ -18,31 +18,30 @@ export function ProfileAvatar({ size = 'lg', className }: ProfileAvatarProps) {
 
   if (hasError) {
     return (
-      <div
-        className={cn(
-          'flex shrink-0 items-center justify-center rounded-card border-2 border-accent font-heading text-accent',
-          sizeClasses[size],
-          className,
-        )}
-        aria-hidden="true"
-      >
-        AR
+      <div className={cn('polaroid-frame shrink-0', className)}>
+        <div
+          className={cn(
+            'flex items-center justify-center bg-surface-muted font-mono font-bold text-accent',
+            sizeClasses[size],
+          )}
+          aria-hidden="true"
+        >
+          AR
+        </div>
       </div>
     )
   }
 
   return (
-    <img
-      src={src}
-      alt="Aron Arboleda"
-      loading="eager"
-      decoding="async"
-      onError={() => setHasError(true)}
-      className={cn(
-        'shrink-0 rounded-card border border-border object-cover',
-        sizeClasses[size],
-        className,
-      )}
-    />
+    <div className={cn('polaroid-frame shrink-0', className)}>
+      <img
+        src={src}
+        alt="Aron Arboleda"
+        loading="eager"
+        decoding="async"
+        onError={() => setHasError(true)}
+        className={cn('block object-cover', sizeClasses[size])}
+      />
+    </div>
   )
 }

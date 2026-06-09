@@ -7,7 +7,8 @@ Drop WebP files here using the paths below. No code changes are needed when you 
 | Asset type | Format | Size notes |
 | ---------- | ------ | ---------- |
 | Project screenshots | WebP | Max width 1920px, compressed |
-| Profile photo | WebP | 800×800 recommended |
+| Profile photo (About) | WebP | 800×800 square |
+| Home hero photo | WebP | 600×800 or 3:4 portrait |
 | OG default | WebP | 1200×630 for social sharing |
 
 Run `npm run verify:images` to list missing files. Use `npm run verify:images:warn` to log without failing.
@@ -17,7 +18,8 @@ Run `npm run verify:images` to list missing files. Use `npm run verify:images:wa
 | File | Path |
 | ---- | ---- |
 | OG default | `og-default.webp` |
-| Profile portrait | `profile/aron-portrait.webp` |
+| Profile portrait (About) | `profile/aron-portrait.webp` |
+| Home hero portrait | `profile/aron-hero.webp` |
 
 ## Per-project files
 
