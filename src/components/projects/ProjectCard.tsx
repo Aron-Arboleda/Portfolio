@@ -34,10 +34,8 @@ export function ProjectCard({ project, bento = false, className }: ProjectCardPr
             title={project.title}
             slug={project.slug}
             loading="lazy"
-            className={cn(
-              'rounded-none border-0',
-              isFeaturedBento ? 'min-h-[220px] lg:min-h-[280px]' : undefined,
-            )}
+            framed={false}
+            className={isFeaturedBento ? 'min-h-[220px] lg:min-h-[280px]' : undefined}
           />
           {isFeaturedBento && (
             <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent p-5 pt-16">

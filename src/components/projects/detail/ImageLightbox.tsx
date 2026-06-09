@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 import { ProjectImage } from '@/components/projects/ProjectImage'
-import { cn } from '@/lib/cn'
 
 type ImageLightboxProps = {
   images: { src: string; caption: string }[]
@@ -91,7 +90,8 @@ export function ImageLightbox({
           alt={`${projectTitle} — ${active.caption}`}
           title={projectTitle}
           slug={projectSlug}
-          className={cn('max-h-[80vh] w-full object-contain')}
+          framed={false}
+          className="max-h-[80vh] w-full"
         />
         <p className="m-0 mt-4 text-center text-sm text-inverse">
           {active.caption} ({activeIndex + 1} of {images.length})

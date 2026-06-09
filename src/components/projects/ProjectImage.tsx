@@ -10,6 +10,8 @@ type ProjectImageProps = {
   slug?: string
   aspectRatio?: 'video' | 'square'
   loading?: 'eager' | 'lazy'
+  /** When false, skips img border/radius — use inside a framed parent (Card, hero shell). */
+  framed?: boolean
   className?: string
 }
 
@@ -20,6 +22,7 @@ export function ProjectImage({
   slug,
   aspectRatio = 'video',
   loading = 'lazy',
+  framed = true,
   className,
 }: ProjectImageProps) {
   const [status, setStatus] = useState<'loading' | 'loaded' | 'error'>('loading')
@@ -32,6 +35,7 @@ export function ProjectImage({
         title={title}
         slug={slug}
         aspectRatio={aspectRatio}
+        framed={framed}
         className={className}
       />
     )
@@ -50,8 +54,9 @@ export function ProjectImage({
         onLoad={() => setStatus('loaded')}
         onError={() => setStatus('error')}
         className={cn(
-          'h-full w-full rounded-card border border-border object-cover transition-opacity duration-300',
+          'h-full w-full object-cover transition-opacity duration-300',
           aspectClass,
+          framed ? 'rounded-card border border-border' : 'rounded-none border-0',
           status === 'loaded' ? 'opacity-100' : 'opacity-0',
         )}
       />

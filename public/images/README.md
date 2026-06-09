@@ -4,35 +4,41 @@ Drop WebP files here using the paths below. No code changes are needed when you 
 
 ## Specs
 
-| Asset type | Format | Size notes |
-| ---------- | ------ | ---------- |
-| Project screenshots | WebP | Max width 1920px, compressed |
-| Profile photo (About) | WebP | 800×800 square |
-| Home hero photo | WebP | 600×800 or 3:4 portrait |
-| Certificate scans | WebP | Landscape scan or screenshot, max width 1600px |
-| OG default | WebP | 1200×630 for social sharing |
+
+| Asset type            | Format | Size notes                                     |
+| --------------------- | ------ | ---------------------------------------------- |
+| Project screenshots   | WebP   | Max width 1920px, compressed                   |
+| Profile photo (About) | WebP   | 800×800 square                                 |
+| Home hero photo       | WebP   | 600×800 or 3:4 portrait                        |
+| Certificate scans     | WebP   | Landscape scan or screenshot, max width 1600px |
+| OG default            | WebP   | 1200×630 for social sharing                    |
+
 
 Run `npm run verify:images` to list missing files. Use `npm run verify:images:warn` to log without failing.
 
 ## Global
 
-| File | Path |
-| ---- | ---- |
-| OG default | `og-default.webp` |
+
+| File                     | Path                         |
+| ------------------------ | ---------------------------- |
+| OG default               | `og-default.webp`            |
 | Profile portrait (About) | `profile/aron-portrait.webp` |
-| Home hero portrait | `profile/aron-hero.webp` |
+| Home hero portrait       | `profile/aron-hero.webp`     |
+
 
 ## Certificates (About page)
 
 One folder per certificate, named after its `id` in `src/data/certificates.ts`. Each folder contains `certificate.webp`.
 
-| Certificate | Path |
-| ----------- | ---- |
-| RAITE Hackathon | `certificates/raite-hackathon/certificate.webp` |
-| Cisco Switching | `certificates/cisco-switching/certificate.webp` |
-| Cisco Networks | `certificates/cisco-networks/certificate.webp` |
-| Sololearn JavaScript | `certificates/sololearn-js/certificate.webp` |
-| Sololearn Python | `certificates/sololearn-python/certificate.webp` |
+
+| Certificate          | Path                                             |
+| -------------------- | ------------------------------------------------ |
+| RAITE Hackathon      | `certificates/raite-hackathon/certificate.webp`  |
+| Cisco Switching      | `certificates/cisco-switching/certificate.webp`  |
+| Cisco Networks       | `certificates/cisco-networks/certificate.webp`   |
+| Sololearn JavaScript | `certificates/sololearn-js/certificate.webp`     |
+| Sololearn Python     | `certificates/sololearn-python/certificate.webp` |
+
 
 ## Per-project files
 
@@ -110,3 +116,4 @@ Each project needs `hero.webp` plus the gallery files listed.
 - `projects/raite-hackathon/hero.webp`
 - `projects/raite-hackathon/team.webp`
 - `projects/raite-hackathon/demo.webp`
+

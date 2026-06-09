@@ -65,7 +65,19 @@ export function ProjectDetailHero({ project }: ProjectDetailHeroProps) {
                 </a>
               ) : (
                 <span className="inline-flex items-center rounded-button border border-border px-3 py-1.5 font-mono text-sm text-muted">
-                  Mobile: {project.links.mobile}
+                  Mobile:{' '}
+                  {project.links.mobileUrl ? (
+                    <a
+                      href={project.links.mobileUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-accent no-underline transition-colors hover:text-primary hover:underline"
+                    >
+                      {project.links.mobile}
+                    </a>
+                  ) : (
+                    project.links.mobile
+                  )}
                 </span>
               ))}
           </div>
@@ -78,7 +90,7 @@ export function ProjectDetailHero({ project }: ProjectDetailHeroProps) {
             title={project.title}
             slug={project.slug}
             loading="eager"
-            className="rounded-none border-0"
+            framed={false}
           />
         </div>
       </div>

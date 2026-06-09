@@ -4,6 +4,7 @@ type ProjectImagePlaceholderProps = {
   title: string
   slug?: string
   aspectRatio?: 'video' | 'square'
+  framed?: boolean
   className?: string
 }
 
@@ -16,12 +17,14 @@ export function ProjectImagePlaceholder({
   title,
   slug,
   aspectRatio = 'video',
+  framed = true,
   className,
 }: ProjectImagePlaceholderProps) {
   return (
     <div
       className={cn(
-        'flex flex-col items-center justify-center border-2 border-dashed border-border',
+        'flex flex-col items-center justify-center',
+        framed && 'border-2 border-dashed border-border',
         'bg-gradient-to-br from-accent-muted via-surface-muted to-surface-elevated',
         aspectClasses[aspectRatio],
         className,

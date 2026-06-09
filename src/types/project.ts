@@ -15,7 +15,10 @@ export type DateRange = {
 export type ProjectLinks = {
   live?: string
   repo?: string
+  /** Label shown after "Mobile:" (or as the Mobile App button when this is a URL). */
   mobile?: string
+  /** External URL for the mobile label — opens in a new tab when set. */
+  mobileUrl?: string
 }
 
 export type TechStackItem = {

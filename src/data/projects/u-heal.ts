@@ -1,11 +1,6 @@
 import type { Project } from '@/types/project'
 import { dateRange } from '@/lib/dates'
 import { buildProjectImages } from '@/lib/images'
-import {
-  PLACEHOLDER_CHALLENGES,
-  PLACEHOLDER_LEARNINGS,
-} from '@/data/projects/shared'
-
 const description =
   'A mobile eHealth system for remote chronic wound monitoring with tissue classification using the U-Net segmentation model.'
 
@@ -49,6 +44,8 @@ export const uHeal: Project = {
   links: {
     live: 'https://u-heal-web.vercel.app/',
     mobile: '@mushmush_aron/U-Heal — Expo',
+    mobileUrl:
+      'https://expo.dev/accounts/mushmush_aron/projects/U-Heal/builds/f10fd4b2-9834-4245-bf87-99354c52cbb0',
   },
   images: buildProjectImages('u-heal', [
     'mobile-1.webp',
@@ -59,7 +56,25 @@ export const uHeal: Project = {
   overview: description,
   contribution:
     "Developer of the whole project — Bachelor's thesis spanning mobile app, web dashboard, and AI-assisted wound analysis.",
-  challenges: PLACEHOLDER_CHALLENGES,
-  learnings: PLACEHOLDER_LEARNINGS,
+  challenges: [
+    'Optimizing the U-Net model for React Native mobile performance.',
+    'Handling ArUco marker detection inaccuracies under varying lighting conditions.',
+    'Preparing and balancing a limited wound dataset for segmentation.',
+    'Integrating FastAPI, Firebase, and the mobile application.',
+    'Debugging real-time updates and cross-device compatibility issues.',
+  ],
+  learnings: [
+    'RAD enabled faster development and iteration.',
+    'U-Net was effective for wound and tissue segmentation.',
+    'OpenCV and PyTorch U-Net worked well for measurement and classification.',
+    'Testing helped identify and fix issues early.',
+    'Firebase and FastAPI provided a scalable backend solution.',
+  ],
   sortOrder: 1,
 }
+
+// RAD enabled faster development and iteration.
+// U-Net was effective for wound and tissue segmentation.
+// OpenCV and PyTorch U-Net worked well for measurement and classification.
+// Testing helped identify and fix issues early.
+// Firebase and FastAPI provided a scalable backend solution.
