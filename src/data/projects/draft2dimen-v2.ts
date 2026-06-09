@@ -34,7 +34,7 @@ export const draft2DimenV2: Project = {
   ],
   role: 'Developer of the project',
   dateRange: dateRange('2026-04', '2026-05', 'Apr. 2026 – May 2026'),
-  featured: false,
+  featured: true,
   links: {},
   images: buildProjectImages('draft2dimen-v2', [
     'calculator.webp',

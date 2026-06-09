@@ -22,7 +22,7 @@ const marqueeItems = [
   'TypeScript',
   'React Native',
   'Python',
-  'GIS',
+  'Java',
   'Machine Learning',
   'Electron',
   'Firebase',
@@ -151,7 +151,8 @@ export default function HomePage() {
                 <div className="gradient-rule mt-3" aria-hidden="true" />
                 <p className="m-0 mt-4 max-w-xl text-muted">
                   From computer servicing in high school to building ML-powered
-                  apps — see the full path I took to become a software developer.
+                  apps — see the full path I took to become a software
+                  developer.
                 </p>
               </div>
               <ButtonLink to="/journey" variant="primary" className="shrink-0">

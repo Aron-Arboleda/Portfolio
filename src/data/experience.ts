@@ -26,6 +26,16 @@ export const experience: Experience[] = [
     projectSlug: 'draft2dimen-v2',
   },
   {
+    id: 'trackerteer-ojt',
+    title: 'Project Assistant',
+    type: 'internship',
+    location: 'Clark, Pampanga',
+    dateRange: dateRange('2025-06', '2025-07', 'June 2025 – July 2025'),
+    deliverable: 'Inventeer Web App',
+    details:
+      'Trackerteer Web Developer Corporation — helped maintain inventory, automate product tables, and RFID management.',
+  },
+  {
     id: 'draft2dimen-gig',
     title: 'Desktop App Developer',
     type: 'freelance',

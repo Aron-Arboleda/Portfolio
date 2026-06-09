@@ -88,6 +88,14 @@ DESKTOP APP DEVELOPER                                      Apr. 2026 – May 202
   Details   : Modified the application; added local saving, steel formula,
               and cost computation
 
+PROJECT ASSISTANT                                          June 2025 – July 2025
+  Type      : On the Job Training (OJT)
+  Location  : Clark, Pampanga
+  Company   : Trackerteer Web Developer Corporation
+  Deliverable: Inventeer Web App
+  Details   : Helped maintain inventory, automate product tables, and RFID
+              management
+
 DESKTOP APP DEVELOPER                                      Mar. 2025 – May 2025
   Type      : Freelance Gig
   Location  : Tarlac City, Tarlac
