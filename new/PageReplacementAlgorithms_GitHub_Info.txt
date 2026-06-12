@@ -1,0 +1,129 @@
+================================================================================
+            PAGE REPLACEMENT ALGORITHMS VISUALIZER - GitHub Repository Overview
+================================================================================
+URL: https://github.com/Aron-Arboleda/PageReplacementAlgorithms
+
+--------------------------------------------------------------------------------
+GENERAL INFO
+--------------------------------------------------------------------------------
+Repository Name   : PageReplacementAlgorithms
+Owner / Developer : Aron-Arboleda (https://github.com/Aron-Arboleda)
+Visibility        : Public
+License           : GPL-3.0
+Repository ID     : 966162685
+Branch            : main
+Total Commits     : 20
+
+--------------------------------------------------------------------------------
+DESCRIPTION
+--------------------------------------------------------------------------------
+A desktop application built for a Finals Case Study in Operating Systems. It
+visualizes the behavior of three Page Replacement Algorithms: FIFO (First-In-
+First-Out), Optimal (OPT), and LRU (Least Recently Used).
+
+One-liner (from GitHub):
+  "A Desktop application that serves as a visualizer of the 3 main page
+   replacement algorithms (FIFO, OPT, and LRU)."
+
+--------------------------------------------------------------------------------
+TECHNOLOGIES USED
+--------------------------------------------------------------------------------
+- Tauri      : For building lightweight, secure, cross-platform desktop apps
+               using web technologies combined with a Rust backend
+- Rust       : Backend/core role, powers the native layer of the Tauri app
+- React      : For creating the user interface
+- TypeScript : For type-safe development
+- CSS        : For styling the application
+
+--------------------------------------------------------------------------------
+REPOSITORY STATS
+--------------------------------------------------------------------------------
+Stars     : 0
+Forks     : 0
+Watchers  : 1
+Releases  : 3 total (Latest: "Page Replacement Visualizer (Tauri version)",
+            released May 24, 2025)
+Packages  : None
+
+--------------------------------------------------------------------------------
+TOPICS / TAGS
+--------------------------------------------------------------------------------
+- react
+- desktop-app
+- typescript
+- visualizer
+- electron-app
+- page-replacement-algorithms
+
+--------------------------------------------------------------------------------
+LANGUAGE BREAKDOWN
+--------------------------------------------------------------------------------
+- TypeScript : 73.6%
+- CSS        : 10.2%
+- Rust       : 9.0%
+- JavaScript : 6.2%
+- HTML       : 1.0%
+
+--------------------------------------------------------------------------------
+APP INSTALLATION
+--------------------------------------------------------------------------------
+Go to the "Releases" section of the GitHub repository (right-hand side). Look
+for the latest release, then under "Assets," download the .exe setup file for
+the application.
+
+--------------------------------------------------------------------------------
+PROJECT STRUCTURE
+--------------------------------------------------------------------------------
+PageReplacementAlgorithms/
+├── .cargo/                  (Rust/Cargo configuration)
+├── .vscode/                 (VS Code editor settings)
+├── CaseStudyDocuments/       (documents required for the case study)
+├── environment/
+├── public/
+├── src-tauri/               (Tauri/Rust backend source)
+├── src/                     (main application source)
+│   └── utils/
+│       ├── constants/        (constant values used throughout the app)
+│       ├── helpers/          (CORE BACKEND LOGIC: algorithm implementations)
+│       └── workers/          (scripts for separate computation threads)
+├── test/
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── .nvmrc
+├── LICENSE
+├── README.md
+├── index.html
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.js
+└── vite.config.ts
+
+Notes:
+- Other files/directories are derived from the "tauri-react" code template
+  (modern-desktop-app-template by elibroftw)
+
+--------------------------------------------------------------------------------
+IMAGES / SCREENSHOTS
+--------------------------------------------------------------------------------
+- Computation Page : src/assets/readme/computationPage.png
+- About Page       : src/assets/readme/aboutPage.png
+
+--------------------------------------------------------------------------------
+CREDITS
+--------------------------------------------------------------------------------
+This project used a tauri-react boilerplate:
+  modern-desktop-app-template (by elibroftw)
+  https://github.com/elibroftw/modern-desktop-app-template
+
+--------------------------------------------------------------------------------
+CONTRIBUTORS
+--------------------------------------------------------------------------------
+- Aron-Arboleda (sole contributor)
+
+--------------------------------------------------------------------------------
+COPYRIGHT
+--------------------------------------------------------------------------------
+© 2025 Aron-Arboleda. All rights reserved.
+
+================================================================================

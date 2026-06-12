@@ -6,6 +6,7 @@ import { gasSmokeDetector } from '@/data/projects/gas-smoke-detector'
 import { liwanagAtDunong } from '@/data/projects/liwanag-at-dunong'
 import { liquefact } from '@/data/projects/liquefact'
 import { nomVet } from '@/data/projects/nom-vet'
+import { pageReplacementAlgorithms } from '@/data/projects/page-replacement-algorithms'
 import { rebyu } from '@/data/projects/rebyu'
 import { pivit } from '@/data/projects/pivit'
 import { remindersBuilder } from '@/data/projects/reminders-builder'
@@ -30,6 +31,7 @@ export const projects: Project[] = [
   pivit,
   nomVet,
   remindersBuilder,
+  pageReplacementAlgorithms,
 ]
 
 export const projectCategories = [
@@ -59,6 +61,7 @@ const EXPECTED_SLUGS = [
   'pivit',
   'nom-vet',
   'reminders-builder',
+  'page-replacement-algorithms',
   'raite-hackathon',
 ] as const
 
