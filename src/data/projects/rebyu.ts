@@ -39,7 +39,7 @@ export const rebyu: Project = {
   dateRange: dateRange('2024-11', '2025-12', 'Nov. 2024 – Dec. 2025'),
   featured: false,
   links: {
-    live: 'https://rebyu.ct.ws/',
+    live: 'https://rebyu.gt.tc/',
   },
   images: buildProjectImages('rebyu', [
     'home-page.webp',
