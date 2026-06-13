@@ -39,7 +39,7 @@ export const liwanagAtDunong: Project = {
   dateRange: dateRange('2024-11', '2025-01', 'Nov. 2024 – Jan. 2025'),
   featured: true,
   links: {
-    live: 'https://liwanagatdunongproject.ct.ws/',
+    live: 'https://liwanagatdunong.gt.tc/',
   },
   images: buildProjectImages('liwanag-at-dunong', [
     'volunteer-form.webp',
