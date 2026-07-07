@@ -30,5 +30,5 @@ export const profile: Profile = {
     },
   ],
   highlights: ['Specializing in Front-End', 'Trackerteer Intern'],
-  resumeUrl: '/Aron_Arboleda_Resume.pdf',
+  resumeUrl: '/Aron-Arboleda-CV.pdf',
 }
