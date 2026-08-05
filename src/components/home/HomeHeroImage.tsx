@@ -14,8 +14,8 @@ export function HomeHeroImage({ className }: HomeHeroImageProps) {
     return (
       <div
         className={cn(
-          'flex aspect-[3/4] w-full max-w-xs items-center justify-center border-2 border-dashed border-border bg-accent-muted ink-shadow sm:max-w-sm lg:max-w-md',
-          className,
+          'flex aspect-3/4 w-full max-w-xs items-center justify-center border-2 border-dashed border-border bg-accent-muted ink-shadow sm:max-w-sm lg:max-w-md',
+          className
         )}
         aria-hidden="true"
       >
@@ -27,8 +27,8 @@ export function HomeHeroImage({ className }: HomeHeroImageProps) {
   return (
     <div
       className={cn(
-        'relative w-full max-w-xs shrink-0 sm:max-w-sm lg:max-w-md',
-        className,
+        'relative w-full max-w-xs overflow-hidden sm:shrink-0 sm:max-w-sm lg:max-w-md',
+        className
       )}
     >
       <div className="ink-shadow overflow-hidden border-2 border-border">
@@ -42,7 +42,7 @@ export function HomeHeroImage({ className }: HomeHeroImageProps) {
         />
       </div>
       <div
-        className="pointer-events-none absolute -bottom-3 -right-3 h-full w-full border-2 border-accent-secondary"
+        className="pointer-events-none absolute inset-0 -z-10 h-full w-full translate-x-0 border-2 border-accent-secondary md:translate-x-0"
         aria-hidden="true"
       />
     </div>

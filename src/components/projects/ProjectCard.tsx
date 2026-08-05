@@ -12,7 +12,11 @@ type ProjectCardProps = {
   className?: string
 }
 
-export function ProjectCard({ project, bento = false, className }: ProjectCardProps) {
+export function ProjectCard({
+  project,
+  bento = false,
+  className,
+}: ProjectCardProps) {
   const isFeaturedBento = bento && project.featured
 
   return (
@@ -24,19 +28,30 @@ export function ProjectCard({ project, bento = false, className }: ProjectCardPr
         hover
         className={cn(
           'h-full overflow-hidden p-0',
-          isFeaturedBento && 'motion-safe:group-hover:-rotate-1',
+          isFeaturedBento && 'motion-safe:group-hover:-rotate-1'
         )}
       >
-        <div className={cn('relative overflow-hidden', isFeaturedBento && 'min-h-[220px]')}>
-          <ProjectImage
-            src={project.images.hero}
-            alt={project.title}
-            title={project.title}
-            slug={project.slug}
-            loading="lazy"
-            framed={false}
-            className={isFeaturedBento ? 'min-h-[220px] lg:min-h-[280px]' : undefined}
-          />
+        <div
+          className={cn(
+            'relative overflow-hidden',
+            isFeaturedBento && 'min-h-[220px]'
+          )}
+        >
+          <div
+            className={cn(
+              'overflow-hidden rounded-card',
+              isFeaturedBento ? 'min-h-[220px] lg:min-h-[280px]' : undefined
+            )}
+          >
+            <ProjectImage
+              src={project.images.hero}
+              alt={project.title}
+              title={project.title}
+              slug={project.slug}
+              loading="lazy"
+              framed={false}
+            />
+          </div>
           {isFeaturedBento && (
             <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent p-5 pt-16">
               <h3 className="m-0 font-heading text-2xl font-semibold text-inverse">
