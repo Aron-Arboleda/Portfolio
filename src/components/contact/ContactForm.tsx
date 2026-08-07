@@ -5,7 +5,7 @@ import { cn } from '@/lib/cn'
 
 const inputClassName = cn(
   'w-full rounded-button border border-border bg-surface px-4 py-2.5 text-sm text-primary',
-  'placeholder:text-muted focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent',
+  'placeholder:text-muted focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent'
 )
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error'
@@ -19,9 +19,11 @@ export function ContactForm() {
   const [status, setStatus] = useState<FormStatus>('idle')
 
   const submitViaMailto = () => {
-    const subject = encodeURIComponent(`Portfolio contact from ${name || 'visitor'}`)
+    const subject = encodeURIComponent(
+      `Portfolio contact from ${name || 'visitor'}`
+    )
     const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\n${message}`,
+      `Name: ${name}\nEmail: ${email}\n\n${message}`
     )
     window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`
   }
@@ -81,11 +83,11 @@ export function ContactForm() {
             'rounded-card border border-accent/30 bg-accent-muted px-4 py-3 text-sm text-primary',
           status === 'error' &&
             'rounded-card border border-border-strong bg-surface-muted px-4 py-3 text-sm text-primary',
-          status !== 'success' && status !== 'error' && 'sr-only',
+          status !== 'success' && status !== 'error' && 'sr-only'
         )}
       >
         {status === 'success' && (
-          <p className="m-0">Message sent — I&apos;ll get back to you soon.</p>
+          <p className="m-0">Message sent. I&apos;ll get back to you soon.</p>
         )}
         {status === 'error' && (
           <p className="m-0">
@@ -103,7 +105,10 @@ export function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="contact-name" className="mb-1.5 block text-sm text-muted">
+        <label
+          htmlFor="contact-name"
+          className="mb-1.5 block text-sm text-muted"
+        >
           Name
         </label>
         <input
@@ -119,7 +124,10 @@ export function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="contact-email" className="mb-1.5 block text-sm text-muted">
+        <label
+          htmlFor="contact-email"
+          className="mb-1.5 block text-sm text-muted"
+        >
           Email
         </label>
         <input
@@ -135,7 +143,10 @@ export function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="contact-message" className="mb-1.5 block text-sm text-muted">
+        <label
+          htmlFor="contact-message"
+          className="mb-1.5 block text-sm text-muted"
+        >
           Message
         </label>
         <textarea
@@ -157,7 +168,7 @@ export function ContactForm() {
       <p className="m-0 text-xs text-muted">
         {web3formsKey
           ? `Your message is sent securely to ${profile.email}.`
-          : `Form backend not configured locally — opens your email client to send to ${profile.email}.`}
+          : `Form backend not configured locally, opens your email client to send to ${profile.email}.`}
       </p>
     </form>
   )

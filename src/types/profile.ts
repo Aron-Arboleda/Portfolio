@@ -9,8 +9,8 @@ export type Profile = {
   fullName: string
   role: string
   email: string
-  phone: string
-  location: string
+  // phone: string
+  // location: string
   languages: string[]
   objective: string
   tagline: string

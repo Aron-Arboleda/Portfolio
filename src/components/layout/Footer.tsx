@@ -8,17 +8,22 @@ export function Footer() {
 
   return (
     <footer className="mt-auto border-t-2 border-border bg-surface-elevated">
-      <div className="gradient-rule mx-auto max-w-content px-4 sm:px-6" aria-hidden="true" />
+      <div
+        className="gradient-rule mx-auto max-w-content px-4 sm:px-6"
+        aria-hidden="true"
+      />
       <div className="mx-auto max-w-content px-4 py-12 sm:px-6">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           <div>
             <p className="m-0 font-heading text-lg font-semibold text-primary">
               {profile.fullName}
             </p>
-            <p className="m-0 mt-1 font-mono text-sm text-accent">{profile.role}</p>
+            <p className="m-0 mt-1 font-mono text-sm text-accent">
+              {profile.role}
+            </p>
             <p className="m-0 mt-3 max-w-xs text-sm text-muted">
-              Building software across web, mobile, and desktop — with room for
-              creative craft.
+              Building software across web, mobile, and desktop. Always leaving
+              room for creative craft.
             </p>
           </div>
 

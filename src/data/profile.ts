@@ -5,8 +5,8 @@ export const profile: Profile = {
   fullName: 'Aron Rez D. Arboleda',
   role: 'Software Developer',
   email: 'arboleda.aronrez@gmail.com',
-  phone: '+63 929-467-4510',
-  location: '0295 Cutcut 1st, Capas, Tarlac, Philippines',
+  // phone: '+63 929-467-4510',
+  // location: '0295 Cutcut 1st, Capas, Tarlac, Philippines',
   languages: ['Filipino', 'English', 'Kapampangan'],
   objective:
     'A highly motivated Computer Science graduate from Tarlac State University, Philippines. Completed multiple case studies and gained experience in setting up desktop and web applications, with both front-end and back-end expertise. Eager to contribute to innovative projects and gain practical experience in software development or any IT-related field.',
@@ -30,5 +30,5 @@ export const profile: Profile = {
     },
   ],
   highlights: ['Specializing in Front-End', 'Trackerteer Intern'],
-  resumeUrl: '/Aron-Arboleda-CV.pdf',
+  resumeUrl: '/ARBOLEDA-RESUME.pdf',
 }

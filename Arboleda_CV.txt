@@ -6,9 +6,6 @@ PERSONAL INFORMATION
 --------------------------------------------------------------------------------
 Full Name   : Aron Rez D. Arboleda
 Job Role    : Software Developer
-Email       : arboleda.aronrez@gmail.com
-Phone       : +63 929-467-4510
-Address     : 0295 Cutcut 1st, Capas, Tarlac, Philippines
 Languages   : Filipino, English, Kapampangan
 
 
