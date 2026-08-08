@@ -2,127 +2,133 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aronarboleda.vercel.app/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/about</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/journey</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/experience</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/contact</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/u-heal</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/liquefact</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/draft2dimen-v2</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aronarboleda.vercel.app/projects/inventeer</loc>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/gas-smoke-detector</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/draft2dimen</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/liwanag-at-dunong</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/rebyu</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/asean-library-database</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/spell</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/subnetting-vlsm-calculator</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/zodiac-sign-identifier</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/pivit</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/nom-vet</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/reminders-builder</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aronarboleda.vercel.app/projects/page-replacement-algorithms</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

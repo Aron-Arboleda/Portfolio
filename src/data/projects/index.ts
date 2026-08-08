@@ -14,12 +14,14 @@ import { spell } from '@/data/projects/spell'
 import { subnettingVlsmCalculator } from '@/data/projects/subnetting-vlsm-calculator'
 import { uHeal } from '@/data/projects/u-heal'
 import { zodiacSignIdentifier } from '@/data/projects/zodiac-sign-identifier'
+import { inventeer } from '@/data/projects/inventeer'
 import { projectSortKey } from '@/lib/dates'
 
 export const projects: Project[] = [
   uHeal,
   liquefact,
   draft2DimenV2,
+  inventeer,
   gasSmokeDetector,
   draft2Dimen,
   liwanagAtDunong,
@@ -50,6 +52,7 @@ const EXPECTED_SLUGS = [
   'u-heal',
   'liquefact',
   'draft2dimen-v2',
+  'inventeer',
   'gas-smoke-detector',
   'draft2dimen',
   'liwanag-at-dunong',

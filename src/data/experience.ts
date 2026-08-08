@@ -34,6 +34,7 @@ export const experience: Experience[] = [
     deliverable: 'Inventeer Web App',
     details:
       'Trackerteer Web Developer Corporation — helped maintain inventory, automate product tables, and RFID management.',
+    projectSlug: 'inventeer',
   },
   {
     id: 'draft2dimen-gig',
