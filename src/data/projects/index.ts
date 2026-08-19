@@ -15,9 +15,11 @@ import { subnettingVlsmCalculator } from '@/data/projects/subnetting-vlsm-calcul
 import { uHeal } from '@/data/projects/u-heal'
 import { zodiacSignIdentifier } from '@/data/projects/zodiac-sign-identifier'
 import { inventeer } from '@/data/projects/inventeer'
+import { renovateAi } from '@/data/projects/renovate-ai'
 import { projectSortKey } from '@/lib/dates'
 
 export const projects: Project[] = [
+  renovateAi,
   uHeal,
   liquefact,
   draft2DimenV2,
@@ -44,11 +46,13 @@ export const projectCategories = [
   { id: 'cli', label: 'CLI' },
   { id: 'hardware', label: 'Hardware' },
   { id: 'fullstack', label: 'Full-stack' },
+  { id: 'workflow-automation', label: 'Workflow Automation' },
 ] as const
 
 export type ProjectFilterId = (typeof projectCategories)[number]['id']
 
 const EXPECTED_SLUGS = [
+  'renovate-ai',
   'u-heal',
   'liquefact',
   'draft2dimen-v2',

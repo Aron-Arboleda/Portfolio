@@ -44,6 +44,23 @@ One folder per certificate, named after its `id` in `src/data/certificates.ts`. 
 
 Each project needs `hero.webp` plus the gallery files listed.
 
+### renovate-ai
+
+- `projects/renovate-ai/hero.webp` (home page hero section)
+- `projects/renovate-ai/chat-widget.webp`
+- `projects/renovate-ai/workflow-1.webp`
+- `projects/renovate-ai/workflow-2.webp`
+- `projects/renovate-ai/workflow-3.webp`
+- `projects/renovate-ai/workflow-4.webp`
+- `projects/renovate-ai/slack-alert.webp`
+- `projects/renovate-ai/follow-up-email.webp`
+- `projects/renovate-ai/architecture.webp`
+- `projects/renovate-ai/page-1.webp`
+- `projects/renovate-ai/page-2.webp`
+- `projects/renovate-ai/page-3.webp`
+- `projects/renovate-ai/page-4.webp`
+- `projects/renovate-ai/page-5.webp`
+
 ### u-heal
 
 - `projects/u-heal/hero.webp`
@@ -143,4 +160,3 @@ Each project needs `hero.webp` plus the gallery files listed.
 - `projects/raite-hackathon/hero.webp`
 - `projects/raite-hackathon/team.webp`
 - `projects/raite-hackathon/demo.webp`
-

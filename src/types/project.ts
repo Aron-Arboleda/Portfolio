@@ -5,6 +5,7 @@ export type ProjectCategory =
   | 'cli'
   | 'hardware'
   | 'fullstack'
+  | 'workflow-automation'
   | 'competition'
 
 export type DateRange = {
