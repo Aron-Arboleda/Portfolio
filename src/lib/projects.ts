@@ -12,6 +12,7 @@ export const categoryLabels: Record<ProjectCategory, string> = {
   hardware: 'Hardware',
   fullstack: 'Full-stack',
   competition: 'Competition',
+  'workflow-automation': 'Workflow Automation',
 }
 
 export function isReflectionPlaceholder(items: string[]): boolean {
