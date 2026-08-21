@@ -29,6 +29,6 @@ export const profile: Profile = {
       type: 'linkedin',
     },
   ],
-  highlights: ['Specializing in Front-End', 'Trackerteer Intern'],
+  highlights: ['Full Stack Development', 'Trackerteer Intern'],
   resumeUrl: '/ARBOLEDA-RESUME.pdf',
 }
