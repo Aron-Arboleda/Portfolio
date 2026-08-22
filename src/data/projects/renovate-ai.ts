@@ -60,7 +60,10 @@ export const renovateAi: Project = {
   role: 'Full-stack Developer and Automation Specialist',
   dateRange: dateRange('2026-08', undefined, 'Aug. 2026 – Present'),
   featured: false,
-  links: {},
+  links: {
+    live: 'https://renovate-ai-n8n.vercel.app/',
+    repo: 'https://github.com/Aron-Arboleda/RenovateAI',
+  },
   images: buildProjectImages('renovate-ai', [
     'chat-widget.webp',
     'workflow-1.webp',
